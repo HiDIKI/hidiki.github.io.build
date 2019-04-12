@@ -180,13 +180,13 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=Noto+Serif+KR|Poor+Story|Song+Myung|Yeon+Sung');
+@import url('https://fonts.googleapis.com/css?family=Yeon+Sung');
   h1,h2,h3,h4,h5,h6{
     font-family: 'Yeon Sung', cursive;
     word-break: keep-all;
   }
   h1{
-    font-size: 4rem !important;
+    font-size: 3.5rem !important;
     border-bottom: 17px solid #36619a;
   }
 </style>

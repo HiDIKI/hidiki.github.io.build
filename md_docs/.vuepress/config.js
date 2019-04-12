@@ -3,6 +3,7 @@ module.exports = {
     description: `Hidekuma\'s DEV logs and Wiki`,
     base: "/HiDIKI/",
     dest: 'docs',
+    ga: 'UA-138204111-1',
     head: [
         ['link', { rel: 'icon', href: '/logo.png' }]
     ],
