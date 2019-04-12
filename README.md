@@ -1,1 +1,2 @@
 # HiDIKI
+- Hidekuma's WIKI

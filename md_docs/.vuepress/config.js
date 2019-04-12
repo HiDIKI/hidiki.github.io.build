@@ -8,7 +8,7 @@ module.exports = {
     ],
     themeConfig: {
         sidebar: [
-            {title: '1. test', children: ['/test/one', '/test/two']}
+            {title: 'Docker', children: ['/Docker/window-install']}
         ],
         nav: [
             { text: 'GitHub', link: 'https://github.com/hidekuma/' }, { text: 'Blog', link: 'https://hidekuma.github.io/' }
