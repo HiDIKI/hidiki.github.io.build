@@ -2,7 +2,7 @@ module.exports = {
     title: `HiDIKI :: Hidekuma\'s WIKI`,
     description: `Hidekuma\'s DEV logs`,
     base: "/HiDIKI/",
-    dest: 'dist',
+    dest: 'docs',
     head: [
         ['link', { rel: 'icon', href: '/logo.png' }]
     ],
