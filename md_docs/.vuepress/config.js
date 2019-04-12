@@ -16,7 +16,8 @@ module.exports = {
 	},
     themeConfig: {
         sidebar: [
-            {title: 'Docker', children: ['/Docker/window-install']}
+            {title: 'Docker', children: ['/docker/window-install']},
+            {title: 'Vim', children: ['/vim/vimrc']}
         ],
         nav: [
 			{
