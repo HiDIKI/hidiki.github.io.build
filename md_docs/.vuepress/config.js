@@ -5,14 +5,26 @@ module.exports = {
     dest: 'docs',
     ga: 'UA-138204111-1',
     head: [
-        ['link', { rel: 'icon', href: '/logo.png' }]
+        ['link', { rel: 'icon', href: '/favicon.ico' }]
     ],
+	configureWebpack: {
+		resolve: {
+		  alias: {
+			'@alias': 'path/to/some/dir'
+		  }
+		}
+	},
     themeConfig: {
         sidebar: [
             {title: 'Docker', children: ['/Docker/window-install']}
         ],
         nav: [
-            { text: 'GitHub', link: 'https://github.com/hidekuma/' }, { text: 'Blog', link: 'https://hidekuma.github.io/' }
+			{
+				text: 'ABOUT🐻',
+				items:[
+					{ text: 'GitHub', link: 'https://github.com/hidekuma/' }, { text: 'Blog', link: 'https://hidekuma.github.io/' }
+				]	
+			}
         ]
     },
 }
