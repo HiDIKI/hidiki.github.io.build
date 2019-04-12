@@ -4,6 +4,7 @@
   },
   "scripts": {
     "docs:dev": "vuepress dev md_docs",
-    "docs:build": "vuepress build md_docs"
+    "docs:build": "vuepress build md_docs",
+    "docs:eject": "vuepress eject md_docs"
   }
 }

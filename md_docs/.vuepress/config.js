@@ -1,6 +1,6 @@
 module.exports = {
-    title: `HiDIKI :: Hidekuma\'s WIKI`,
-    description: `Hidekuma\'s DEV logs`,
+    title: `H!DIKI`,
+    description: `Hidekuma\'s DEV logs and Wiki`,
     base: "/HiDIKI/",
     dest: 'docs',
     head: [
