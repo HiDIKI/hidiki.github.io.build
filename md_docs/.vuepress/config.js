@@ -17,13 +17,15 @@ module.exports = {
     themeConfig: {
         sidebar: [
             {title: 'Docker', children: ['/docker/window-install']},
-            {title: 'Vim', children: ['/vim/vimrc']}
+            {title: 'Vim', children: ['/vim/vimrc']},
+            {title: 'Pythonic', children: ['/pythonic/pep8']}
         ],
         nav: [
 			{
-				text: 'ABOUT🐻',
+				text: 'ABOUT',
 				items:[
-					{ text: 'GitHub', link: 'https://github.com/hidekuma/' }, { text: 'Blog', link: 'https://hidekuma.github.io/' }
+					{ text: 'Github', link: 'https://github.com/hidekuma/' },
+                    { text: 'Blog', link: 'https://hidekuma.github.io/' }
 				]	
 			}
         ]
