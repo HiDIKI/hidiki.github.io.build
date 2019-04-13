@@ -18,7 +18,13 @@ module.exports = {
         sidebar: [
             {title: 'Docker', children: ['/docker/window-install']},
             {title: 'Vim', children: ['/vim/vimrc']},
-            {title: 'Pythonic', children: ['/pythonic/pep8']}
+            {
+                title: 'Pythonic',
+                children: [
+                    '/pythonic/pep8',
+                    '/pythonic/generator'
+                ]
+            }
         ],
         nav: [
 			{

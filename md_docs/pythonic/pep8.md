@@ -41,8 +41,8 @@ from . import foo # OK
 import foo # X
 
 # 3. 긍정표현식의 부정보다는 비교부정
-if not a is b # OK
-if a is not b # X
+if a is not b # OK
+if not a is b # X
 
 # 4. [] 와 '' 등의 빈 값은 파이썬에서 암시적으로 False
 if not somelist # OK
