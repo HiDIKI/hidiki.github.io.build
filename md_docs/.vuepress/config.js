@@ -20,11 +20,12 @@ module.exports = {
         '@vuepress/last-updated',
         '@vuepress/nprogress',
         '@vuepress/blog',
-        '@vuepress/google-analytics',
-        {
-            'ga': 'UA-138204111-1'
-        }
-
+        [
+            '@vuepress/google-analytics',
+            {
+                'ga': 'UA-138204111-1'
+            }
+        ]
     ],
     themeConfig: {
         sidebar: [
