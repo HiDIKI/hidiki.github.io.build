@@ -29,15 +29,10 @@ module.exports = {
     themeConfig: {
         sidebar: [
             {
-                title: 'Docker',
+                title: 'Pythonic',
                 children: [
-                    '/docker/window-install'
-                ]
-            },
-            {
-                title: 'Vim',
-                children: [
-                    '/vim/vimrc'
+                    '/pythonic/pep8',
+                    '/pythonic/generator'
                 ]
             },
             {
@@ -49,10 +44,16 @@ module.exports = {
                 ]
             },
             {
-                title: 'Pythonic',
+                title: 'Docker',
                 children: [
-                    '/pythonic/pep8',
-                    '/pythonic/generator'
+                    '/docker/window-install',
+                    '/docker/extend-services-in-compose'
+                ]
+            },
+            {
+                title: 'Vim',
+                children: [
+                    '/vim/vimrc'
                 ]
             }
         ],
