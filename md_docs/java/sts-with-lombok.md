@@ -14,8 +14,8 @@ $ cd {다운로드 경로}
 $ java -jar lombok.jar
 ```
 3. 해당 에러는 `IDE`경로를 못찾는 에러로 무시해도 된다.
-![lombok-error](/sts-with-lombok/lombok-error.png)
+<img :src="$withBase('/sts-with-lombok/lombok-error.png')" alt="lombok-error">
 4. <kbd>Specify location...</kbd> 을 클릭하여, `sts.ini`경로를 지정한다.
-![lombok-installer](/sts-with-lombok/lombok-installer.png)
+<img :src="$withBase('/sts-with-lombok/lombok-installer.png')" alt="lombok-installer">
 5. 경로 지정 후,<kbd>Install / Update</kbd> 클릭. `Mac`의 경우, `Application > SpringToolSuite4 > Eclipse > STS.ini`에 있다.
-![sts-ini-path](/sts-with-lombok/sts-ini-path.png)
+<img :src="$withBase('/sts-with-lombok/sts-ini-path.png')" alt="sts-ini-path">
