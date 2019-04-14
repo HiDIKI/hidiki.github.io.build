@@ -3,7 +3,6 @@ module.exports = {
     description: `Hidekuma\'s DEV logs and Wiki`,
     base: "/HiDIKI/",
     dest: 'docs',
-    ga: 'UA-138204111-1',
     head: [
         ['link', { rel: 'icon', href: '/favicon.ico' }]
     ],
@@ -14,10 +13,24 @@ module.exports = {
 		  }
 		}
 	},
+    plugins: [
+        '@vuepress/medium-zoom',
+        '@vuepress/back-to-top',
+        '@vuepress/active-header-links',
+        '@vuepress/last-updated',
+        '@vuepress/nprogress',
+        '@vuepress/blog',
+        '@vuepress/google-analytics',
+        {
+            'ga': 'UA-138204111-1'
+        }
+
+    ],
     themeConfig: {
         sidebar: [
             {title: 'Docker', children: ['/docker/window-install']},
             {title: 'Vim', children: ['/vim/vimrc']},
+            {title: 'Java', children: ['/java/layerd-spring-application']},
             {
                 title: 'Pythonic',
                 children: [
@@ -27,13 +40,13 @@ module.exports = {
             }
         ],
         nav: [
-			{
-				text: 'ABOUT',
-				items:[
-					{ text: 'Github', link: 'https://github.com/hidekuma/' },
-                    { text: 'Blog', link: 'https://hidekuma.github.io/' }
-				]	
-			}
+          {
+            text: 'ABOUT',
+            items:[
+              { text: 'Github', link: 'https://github.com/hidekuma/' },
+                        { text: 'Blog', link: 'https://hidekuma.github.io/' }
+            ]
+          }
         ]
     },
 }

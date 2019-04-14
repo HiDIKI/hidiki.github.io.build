@@ -1,10 +1,20 @@
 {
   "devDependencies": {
-    "vuepress": "^0.14.10"
+    "@vuepress/plugin-active-header-links": "^1.0.0-alpha.47",
+    "@vuepress/plugin-back-to-top": "^1.0.0-alpha.47",
+    "@vuepress/plugin-blog": "^1.0.0-alpha.47",
+    "@vuepress/plugin-google-analytics": "^1.0.0-alpha.47",
+    "@vuepress/plugin-last-updated": "^1.0.0-alpha.47",
+    "@vuepress/plugin-medium-zoom": "^1.0.0-alpha.47",
+    "@vuepress/plugin-nprogress": "^1.0.0-alpha.47",
+    "@vuepress/plugin-pwa": "^1.0.0-alpha.47",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "vuepress": "^1.0.0-alpha.47"
   },
   "scripts": {
-    "docs:dev": "vuepress dev md_docs",
-    "docs:build": "vuepress build md_docs",
-    "docs:eject": "vuepress eject md_docs"
+    "dev": "vuepress dev md_docs",
+    "build": "vuepress build md_docs",
+    "eject": "vuepress eject md_docs"
   }
 }
