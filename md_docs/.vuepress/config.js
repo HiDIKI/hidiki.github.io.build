@@ -28,9 +28,26 @@ module.exports = {
     ],
     themeConfig: {
         sidebar: [
-            {title: 'Docker', children: ['/docker/window-install']},
-            {title: 'Vim', children: ['/vim/vimrc']},
-            {title: 'Java', children: ['/java/layerd-spring-application']},
+            {
+                title: 'Docker',
+                children: [
+                    '/docker/window-install'
+                ]
+            },
+            {
+                title: 'Vim',
+                children: [
+                    '/vim/vimrc'
+                ]
+            },
+            {
+                title: 'Java',
+                children: [
+                    '/java/start-spring-boot',
+                    '/java/sts-with-lombok',
+                    '/java/bean-vs-component'
+                ]
+            },
             {
                 title: 'Pythonic',
                 children: [
