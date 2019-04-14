@@ -1,4 +1,4 @@
-# * 커스터마이징 Vim
+# * 나만의 커스터마이징 Vim
 ## 적용방법
 1. 로컬 `~/.vimrc`에 최하단 코드를 [복붙](https://raw.githubusercontent.com/hidekuma/dotfiles/master/.vimrc.new)한다. `.vimrc`가 없으면 만들어준다.
 2. 변경사항을 반영하기 위해, `.vimrc`를 재로딩해준다.
