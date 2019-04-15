@@ -25,6 +25,12 @@ module.exports = {
             {
                 'ga': 'UA-138204111-1'
             }
+        ],
+        [
+            'sitemap',
+            {
+                hostname: 'https://hidekuma.github.io/HiDIKI/'
+            }
         ]
     ],
     themeConfig: {
