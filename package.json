@@ -16,5 +16,8 @@
     "dev": "vuepress dev md_docs",
     "build": "vuepress build md_docs",
     "eject": "vuepress eject md_docs"
+  },
+  "dependencies": {
+    "vuepress-plugin-sitemap": "^2.1.2"
   }
 }
