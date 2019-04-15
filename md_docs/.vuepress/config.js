@@ -33,7 +33,8 @@ module.exports = {
                 title: 'Pythonic',
                 children: [
                     '/pythonic/pep8',
-                    '/pythonic/generator'
+                    '/pythonic/generator',
+                    '/pythonic/raise-error'
                 ]
             },
             {
@@ -55,6 +56,12 @@ module.exports = {
                 title: 'Vim',
                 children: [
                     '/vim/vimrc'
+                ]
+            },
+            {
+                title: 'Else',
+                children: [
+                    '/else/framework-and-library'
                 ]
             }
         ],
