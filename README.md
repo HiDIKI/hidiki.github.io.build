@@ -15,3 +15,6 @@ My daily commit :D
 ### 규칙 (2019/04/14 ~ )
 - 쓸데없는 커밋은 하지 않는다.
 - git 커밋 메세지에 변경내용을 상세하게 기록한다.
+
+### 히데쿠마와 함께 하고자한다면?
+- [내용읽기](https://github.com/hidekuma/HiDIKI/blob/master/contribute.md)
