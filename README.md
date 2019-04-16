@@ -1,5 +1,7 @@
 # H!DIKI
 HiDekuma + WIKI = HiDIKI
+시작은 이러 했으나, 마음이 맞느 개발자들이 모여 개발위키를 제작하기로 하였다.
+HiDIKI => Hi Dev WIKI
 
 ## Since 2019/04/12 ~
 My daily commit :D
