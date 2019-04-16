@@ -75,7 +75,7 @@ module.exports = {
           {
             text: 'ABOUT',
             items:[
-                { text: 'Github', link: 'https://github.com/HiDIKI/hidiki.github.io' }
+                { text: 'Github', link: 'https://github.com/HiDIKI/hidiki.github.io.build/' }
             ]
           }
         ]
