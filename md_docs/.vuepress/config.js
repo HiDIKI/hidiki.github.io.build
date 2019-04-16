@@ -1,7 +1,7 @@
 module.exports = {
-    title: `H!DIKI`,
-    description: `Hidekuma\'s DEV logs and Wiki`,
-    base: "/HiDIKI/",
+    title: `HIDIKI`,
+    description: `DEV WIKI`,
+    base: "/",
     dest: 'docs',
     head: [
         ['link', { rel: 'icon', href: '/favicon.ico' }]
@@ -29,7 +29,7 @@ module.exports = {
         [
             'sitemap',
             {
-                hostname: 'https://hidekuma.github.io/HiDIKI/'
+                hostname: 'https://hidiki.github.io/'
             }
         ]
     ],
@@ -75,8 +75,7 @@ module.exports = {
           {
             text: 'ABOUT',
             items:[
-              { text: 'Github', link: 'https://github.com/hidekuma/' },
-                        { text: 'Blog', link: 'https://hidekuma.github.io/' }
+                { text: 'Github', link: 'https://github.com/HiDIKI/hidiki.github.io' }
             ]
           }
         ]
