@@ -4,6 +4,7 @@
 set -e
 
 # build
+yarn
 yarn build
 
 # navigate into the build output directory
@@ -16,7 +17,7 @@ git init
 git remote add origin https://github.com/HiDIKI/hidiki.github.io.git
 git add -A
 git commit -m 'DEPLOY'
-git push --set-upstream origin master
+git push -f --set-upstream origin master
 git config user.name hidekuma
 git config user.email d.hidekuma@gmail.com
 
