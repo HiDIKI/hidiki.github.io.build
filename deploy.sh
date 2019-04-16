@@ -7,6 +7,9 @@ set -e
 yarn
 yarn build
 
+# cp ga
+cp ./google*.html ./docs
+
 # navigate into the build output directory
 cd docs
 
