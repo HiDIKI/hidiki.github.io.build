@@ -1,0 +1,29 @@
+#!/usr/bin/env sh
+
+# abort on errors
+set -e
+
+# build
+yarn build
+
+# navigate into the build output directory
+cd docs
+
+# if you are deploying to a custom domain
+# echo 'www.example.com' > CNAME
+
+git init
+git remote add origin https://github.com/HiDIKI/hidiki.github.io.git
+git add -A
+git commit -m 'DEPLOY'
+git push --set-upstream origin master
+git config user.name hidekuma
+git config user.email d.hidekuma@gmail.com
+
+# if you are deploying to https://<USERNAME>.github.io
+git push
+
+# if you are deploying to https://<USERNAME>.github.io/<REPO>
+# git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
+
+cd -
