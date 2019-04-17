@@ -81,12 +81,6 @@ module.exports = {
                 children: [
                     '/else/framework-and-library'
                 ]
-            },
-            {
-                title: 'React',
-                children: [
-                    '/react/why-choose-react'
-                ]
             }
         ],
         nav: [
