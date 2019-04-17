@@ -1,18 +1,16 @@
 module.exports = {
     title: `HIDIKI`,
     description: `DEV WIKI`,
-    base: "/",
+    base: '/',
     dest: 'docs',
-    head: [
-        ['link', { rel: 'icon', href: '/favicon.ico' }]
-    ],
-	configureWebpack: {
-		resolve: {
-		  alias: {
-			'@alias': 'path/to/some/dir'
-		  }
-		}
-	},
+    head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
+    configureWebpack: {
+        resolve: {
+            alias: {
+                '@alias': 'path/to/some/dir'
+            }
+        }
+    },
     plugins: [
         '@vuepress/medium-zoom',
         '@vuepress/back-to-top',
@@ -23,7 +21,7 @@ module.exports = {
         [
             '@vuepress/google-analytics',
             {
-                'ga': 'UA-138204111-1'
+                ga: 'UA-138204111-1'
             }
         ],
         [
@@ -37,11 +35,7 @@ module.exports = {
         sidebar: [
             {
                 title: 'Pythonic',
-                children: [
-                    '/pythonic/pep8',
-                    '/pythonic/generator',
-                    '/pythonic/raise-error'
-                ]
+                children: ['/pythonic/pep8', '/pythonic/generator', '/pythonic/raise-error']
             },
             {
                 title: 'Java',
@@ -53,44 +47,36 @@ module.exports = {
             },
             {
                 title: 'Docker',
-                children: [
-                    '/docker/window-install',
-                    '/docker/extend-services-in-compose'
-                ]
+                children: ['/docker/window-install', '/docker/extend-services-in-compose']
             },
             {
                 title: 'Vim',
-                children: [
-                    '/vim/vimrc'
-                ]
+                children: ['/vim/vimrc']
             },
             {
                 title: 'Database',
-                children: [
-                    'database/mysql-storage-engine'
-                ]
+                children: ['database/mysql-storage-engine']
             },
             {
                 title: 'Javascript',
-                children: [
-                    '/javascript/webassembly'
-                ]
+                children: ['/javascript/webassembly']
             },
             {
                 title: 'Else',
-                children: [
-                    '/else/framework-and-library'
-                ]
+                children: ['/else/framework-and-library']
+            },
+            {
+                title: 'React',
+                children: ['/react/why-choose-reactjs']
             }
         ],
         nav: [
-          {
-            text: 'ABOUT',
-            items:[
-                { text: 'Github', link: 'https://github.com/HiDIKI/hidiki.github.io.build/' }
-            ]
-          }
+            {
+                text: 'ABOUT',
+                items: [
+                    { text: 'Github', link: 'https://github.com/HiDIKI/hidiki.github.io.build/' }
+                ]
+            }
         ]
-    },
-}
-
+    }
+};
