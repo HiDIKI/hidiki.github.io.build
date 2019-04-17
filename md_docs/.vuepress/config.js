@@ -71,6 +71,12 @@ module.exports = {
                 ]
             },
             {
+                title: 'Javascript',
+                children: [
+                    '/javascript/webassembly'
+                ]
+            },
+            {
                 title: 'Else',
                 children: [
                     '/else/framework-and-library'
