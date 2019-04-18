@@ -6,13 +6,6 @@ module.exports = {
     head: [
         ['link', { rel: 'icon', href: '/favicon.ico' }]
     ],
-	configureWebpack: {
-		resolve: {
-		  alias: {
-			'@alias': 'path/to/some/dir'
-		  }
-		}
-	},
     plugins: [
         '@vuepress/medium-zoom',
         '@vuepress/back-to-top',
@@ -20,18 +13,8 @@ module.exports = {
         '@vuepress/last-updated',
         '@vuepress/nprogress',
         '@vuepress/blog',
-        [
-            '@vuepress/google-analytics',
-            {
-                'ga': 'UA-138204111-1'
-            }
-        ],
-        [
-            'sitemap',
-            {
-                hostname: 'https://hidiki.github.io/'
-            }
-        ]
+        ['@vuepress/google-analytics', {ga: 'UA-138204111-1'}],
+        ['sitemap',{hostname: 'https://hidiki.github.io/'}]
     ],
     themeConfig: {
         sidebar: [
@@ -40,7 +23,8 @@ module.exports = {
                 children: [
                     '/pythonic/pep8',
                     '/pythonic/generator',
-                    '/pythonic/raise-error'
+                    '/pythonic/raise-error',
+                    '/pythonic/closure'
                 ]
             },
             {
@@ -77,17 +61,17 @@ module.exports = {
                 ]
             },
             {
+                title: 'React',
+                children: [
+                    '/react/why-choose-react'
+                ]
+            },
+            {
                 title: 'Else',
                 children: [
                     '/else/framework-and-library'
                 ]
             },
-            {
-                title: 'React',
-                children: [
-                    '/react/why-choose-react'
-                ]
-            }
         ],
         nav: [
           {
