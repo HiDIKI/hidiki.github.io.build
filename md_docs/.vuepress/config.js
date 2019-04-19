@@ -1,5 +1,5 @@
 module.exports = {
-    title: `HIDIKI`,
+    title: `🌱 HIDIKI`,
     description: `DEV WIKI`,
     base: "/",
     dest: 'docs',
