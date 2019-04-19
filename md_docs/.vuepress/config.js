@@ -1,6 +1,6 @@
 module.exports = {
-    title: `🌱 HIDIKI`,
-    description: `DEV WIKI`,
+    title: `HIDIKI`,
+    description: `📖 다소 식상하지만, 모두가 Hi! 할 만큼 반가울 정도의 DEV WIKI를 꿈꾼다. 하이디키 혹은 히디키, 발음은 아무렴 어때.`,
     base: "/",
     dest: 'docs',
     head: [
@@ -78,9 +78,10 @@ module.exports = {
           {
             text: 'ABOUT',
             items:[
-                { text: 'Github', link: 'https://github.com/HiDIKI/hidiki.github.io.build/' }
+                { text: 'Github', link: 'https://github.com/HiDIKI/hidiki.github.io.build/' },
+                { text: 'Contributing', link: 'https://github.com/HiDIKI/hidiki.github.io.build/blob/master/CONTRIBUTING.md' }
             ]
-          }
+          },
         ]
     },
 }
