@@ -1,5 +1,5 @@
 module.exports = {
-    title: `HIDIKI`,
+    title: `🌱 HIDIKI`,
     description: `DEV WIKI`,
     base: "/",
     dest: 'docs',
@@ -24,7 +24,8 @@ module.exports = {
                     '/pythonic/pep8',
                     '/pythonic/generator',
                     '/pythonic/raise-error',
-                    '/pythonic/closure'
+                    '/pythonic/closure',
+                    '/pythonic/feature-of-iterator'
                 ]
             },
             {
