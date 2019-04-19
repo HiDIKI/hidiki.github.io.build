@@ -58,7 +58,8 @@ module.exports = {
             {
                 title: 'Javascript',
                 children: [
-                    '/javascript/webassembly'
+                    '/javascript/webassembly',
+                    '/javascript/code-optimization'
                 ]
             },
             {
