@@ -24,7 +24,8 @@ module.exports = {
                     '/pythonic/pep8',
                     '/pythonic/generator',
                     '/pythonic/raise-error',
-                    '/pythonic/closure'
+                    '/pythonic/closure',
+                    '/pythonic/feature-of-iterator'
                 ]
             },
             {
