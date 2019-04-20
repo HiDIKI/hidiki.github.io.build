@@ -69,7 +69,8 @@ module.exports = {
             {
                 title: 'React',
                 children: [
-                    '/react/why-choose-react'
+                    '/react/why-choose-react',
+                    '/react/react-redux'
                 ]
             },
             {
