@@ -13,9 +13,13 @@ module.exports = {
         '@vuepress/last-updated',
         '@vuepress/nprogress',
         '@vuepress/blog',
+        ['@vuepress/register-components', {componentsDir: 'custom_components/'}],
         ['@vuepress/google-analytics', {ga: 'UA-138204111-1'}],
         ['sitemap',{hostname: 'https://hidiki.github.io/'}]
     ],
+    markdown: {
+        lineNumbers: true
+    },
     themeConfig: {
         sidebar: [
             {

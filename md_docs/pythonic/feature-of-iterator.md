@@ -1,4 +1,12 @@
+---
+meta:
+  - name: author
+    content: Hidekuma
+  - name: keywords
+    content: 파이써닉 Pythonic 이터레이터 소진성 StopIteation 제너레이터 이터러블 Iterable
+---
 # * 이터레이터의 특별한 특징
+<Author/>
 ## 소진성
 > 제너레이터가 반환한 이터레이터는 호출 되면, `StopItreration Exception`을 일으킨 후 데이터가 소진된다.
 ### 예시1
