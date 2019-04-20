@@ -6,7 +6,7 @@
 
 |MVC Pattern|Flux Pattern|
 |:---:|:---:|
-|<img height="200px" src="./images/mvc_pattern.png"/>|<img height="200px" src="./images/flux_pattern.png"/>|
+|<img :src="$withBase('/react-redux/mvc_pattern.png')" alt="mvc_pattern" />|<img :src="$withBase('/react-redux/flux_pattern.png')" alt="flux_pattern" />|
 ---
 ## **Flux & Redux**
 
@@ -41,4 +41,4 @@ Flux 패턴의 핵심 개념과 동일하다.
 
 2. 상위 컴포넌트에서 무수히 많은 Depth의 하위 컴포넌트에 상태값을 내려줘야 되는경우\
 \
-<img width="400px" src="./images/withRedux.png">
+<img :src="$withBase('/react-redux/withRedux.png')" alt="withRedux" />
