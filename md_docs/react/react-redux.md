@@ -1,5 +1,9 @@
+---
+customauthor:
+  - name: Wabi
+---
 # * React Redux란?
-
+<Author/>
 ## **Redux가 생겨난 이유**
 
 자바스크립트 `싱글페이지 어플리케이션 (이하 'SPA')` 개발이 활발하게 이루어 지면서, 리엑트의 컴포넌트 상태를 나타내는 state의 구조가 점점 복잡해지고, JSON의 depth도 점점 깊어져 가면서, 상위 컴포넌트에서 state를 하위 컴포넌트로 계속 상태변화를 알려주기가 너무 복잡해 지는 상황이 발생하였고, 사이드 이팩트를 일으키는 비동기 통신 데이터는 복잡한 컴포넌트 구조에서 더욱 더 오류를 찾기도 힘들고 컴포넌트 테스트를 하기에도 힘들어졌기 때문에 상태관리를 편하게 하기위해 Redux가 생겨났다. `(MVC 패턴 -> Flux 패턴 , Redux)`
@@ -10,7 +14,7 @@
 ---
 ## **Flux & Redux**
 
-리덕스는 플럭스 패턴의 중요한 특징들에서 영감을 받아서 만들어졌다고, [리덕스 공식 문서]('https://lunit.gitbook.io/redux-in-korean/introduction/priorart')에도 나와있다.
+리덕스는 플럭스 패턴의 중요한 특징들에서 영감을 받아서 만들어졌다고, [리덕스 공식 문서](https://lunit.gitbook.io/redux-in-korean/introduction/priorart)에도 나와있다.
 
 1. Redux 는 Flux 패턴과 모델 업데이트 로직에 집중하게 해준다는 점은 동일하다.
 
@@ -40,5 +44,4 @@ Flux 패턴의 핵심 개념과 동일하다.
 `(모달 팝업 또는 페이지 로딩바)`
 
 2. 상위 컴포넌트에서 무수히 많은 Depth의 하위 컴포넌트에 상태값을 내려줘야 되는경우\
-\
 <img :src="$withBase('/react-redux/withRedux.png')" alt="withRedux" />
