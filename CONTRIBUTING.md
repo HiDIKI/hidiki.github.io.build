@@ -72,7 +72,6 @@ Added|Deleted|Modified|Updated|Created something titie
 ---
 customauthor:
   - name: Hidekuma
-    email: d.hidekuma@gmail.com
 ---
 # 제목 타이틀 밑에다가 아래 태그 삽입
 <Author/>
