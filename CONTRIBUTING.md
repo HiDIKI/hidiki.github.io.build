@@ -51,7 +51,7 @@ Added|Deleted|Modified|Updated|Created something titie
 
 ## ✅ PR 체크리스트
 - [x] 작성하는 문서는 markdown 형식이여야한다.
-  - [<vuepress:필독>](https://v1.vuepress.vuejs.org/guide/markdown.html#header-anchors)
+  - [<vuepress-필독>](https://v1.vuepress.vuejs.org/guide/markdown.html#header-anchors)
   - 이미지 사용 시, 이미지 경로는 `md_docs` > `.vuepress` > `vuepress` > `{title}` 하위. [<관련내용>](https://github.com/HiDIKI/hidiki.github.io.build/pull/10)
 - [x] 문서의 h1(`#`)태그, 즉 타이틀은 `* `로 시작한다.
 - [x] 모든 문서에는 `#`(타이틀)이 존재해야 한다.
