@@ -1,9 +1,7 @@
 ---
-meta:
-  - name: author
-    content: Hidekuma
-  - name: keywords
-    content: 파이써닉 Pythonic 이터레이터 소진성 StopIteation 제너레이터 이터러블 Iterable
+customauthor:
+  - name: Hidekuma
+    email: d.hidekuma@gmail.com
 ---
 # * 이터레이터의 특별한 특징
 <Author/>

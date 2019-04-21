@@ -1,4 +1,10 @@
+---
+customauthor:
+  - name: Hidekuma
+    email: d.hidekuma@gmail.com
+---
 # * Window에 도커 설치 
+<Author/>
 ## 1. Hyper-V 설치
 1. windows 기능 > windows 기능 켜기/끄기
 2. Hyper-V 체크박스에 체크.

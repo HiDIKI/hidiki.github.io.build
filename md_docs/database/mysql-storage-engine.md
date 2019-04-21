@@ -1,4 +1,10 @@
+---
+customauthor:
+  - name: Hidekuma
+    email: d.hidekuma@gmail.com
+---
 # * MySQL 스토리지 엔진
+<Author/>
 > 많은 스토리지 엔진 중, 대표적인 엔진 두 가지에 대해 비교를 해보기로 한다.
 
 ## 도커로 MySQL띄우기
