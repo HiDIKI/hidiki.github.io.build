@@ -41,8 +41,6 @@ Added|Deleted|Modified|Updated|Created something titie
 - let's get it
 - make some noise for me
 ```
-### 이슈관련 커밋시 규칙
-- [이슈 해결관련](https://github.com/HiDIKI/hidiki.github.io.build/wiki/5.-Issue-%EC%BB%A8%ED%8A%B8%EB%A1%A4)
 
 ### 참고링크
 - https://meetup.toast.com/posts/106
