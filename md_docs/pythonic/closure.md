@@ -1,4 +1,10 @@
+---
+customauthor:
+  - name: Hidekuma
+    email: d.hidekuma@gmail.com
+---
 # * 클로저와 변수 스코프에 상호작용
+<Author/>
 ## 클로저(Closure)란?
 > 클로저란, 자신이 정의된 스코프(scope:유효범위)에 있는 변수를 참조하는 함수다. 하기 예제 코드를 보면, `change_core`함수가 `change`함수의 `left`인수에 바로 접근하고 있는데, 바로 클로저 덕분에 접근이 가능한 것이다.
 

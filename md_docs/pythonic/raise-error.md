@@ -1,4 +1,10 @@
+---
+customauthor:
+  - name: Hidekuma
+    email: d.hidekuma@gmail.com
+---
 # * None을 반환하지 않기
+<Author/>
 ## None을 반환할 경우
 나누기 함수를 작성해보자.
 ```python

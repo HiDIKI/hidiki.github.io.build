@@ -1,4 +1,10 @@
+---
+customauthor:
+  - name: Hidekuma
+    email: d.hidekuma@gmail.com
+---
 # * @Bean과 @Component의 차이
+<Author/>
 ## @Bean
 - 스프링 IoC컨테이너에서 Life cylce을 관리하는 객체를 뜻함.
 

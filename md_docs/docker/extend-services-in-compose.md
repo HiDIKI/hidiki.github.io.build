@@ -1,4 +1,10 @@
+---
+customauthor:
+  - name: Hidekuma
+    email: d.hidekuma@gmail.com
+---
 # * 멀티플 도커 파일
+<Author/>
 ## 도커 오버라이드 (Default)
 도커 컴포즈가 컴포즈 파일을 따로 제시하지 않는 이상, `docker-compose.yml`을 읽는다는 것은 모두다 아는 사실이다. 하지만 실제로 도커 컴포즈는 기본적으로 다음과 같은 순서로 <U>2개의 파일</U>을 읽는다.
 1. `docker-compose.yml`
