@@ -1,7 +1,6 @@
 ---
 customauthor:
   - name: Hidekuma
-    email: d.hidekuma@gmail.com
 ---
 # * 이터레이터의 특별한 특징
 <Author/>

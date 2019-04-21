@@ -1,7 +1,6 @@
 ---
 customauthor:
   - name: Hidekuma
-    email: d.hidekuma@gmail.com
 ---
 # * 클로저와 변수 스코프에 상호작용
 <Author/>

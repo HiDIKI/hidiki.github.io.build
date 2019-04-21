@@ -1,7 +1,6 @@
 ---
 customauthor:
   - name: Hidekuma
-    email: d.hidekuma@gmail.com
 ---
 # * Window에 도커 설치 
 <Author/>

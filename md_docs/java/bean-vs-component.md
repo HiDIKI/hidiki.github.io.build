@@ -1,7 +1,6 @@
 ---
 customauthor:
   - name: Hidekuma
-    email: d.hidekuma@gmail.com
 ---
 # * @Bean과 @Component의 차이
 <Author/>

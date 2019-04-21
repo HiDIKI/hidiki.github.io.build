@@ -1,7 +1,6 @@
 ---
 customauthor:
   - name: Hidekuma
-    email: d.hidekuma@gmail.com
 ---
 # * MySQL 스토리지 엔진
 <Author/>
