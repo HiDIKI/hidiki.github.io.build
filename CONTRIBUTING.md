@@ -65,6 +65,19 @@ Added|Deleted|Modified|Updated|Created something titie
 
 ---
 
+## 🚧 부가기능
+### 글쓴이 넣기
+`md`파일 최상단에 해당 부분삽입 후 제목 태그에 아래에 `<Author/>`컴포넌트 삽입.
+```md
+---
+customauthor:
+  - name: Hidekuma
+    email: d.hidekuma@gmail.com
+---
+# 제목 타이틀 밑에다가 아래 태그 삽입
+<Author/>
+```
+
 ## 🚥 이슈컨트롤 - 자동종료
 > Github에는 커밋 메시지에 특정한 단어를 사용해 자동으로 이슈를 종료시키는 편리한 기능이 탑재되어있다. 이 예약어는 커밋 메시지 안의 어느 위치에서나 사용 가능.
 
