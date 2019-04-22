@@ -17,7 +17,7 @@ cd docs
 # echo 'www.example.com' > CNAME
 
 git init
-git remote add origin https://github.com/HiDIKI/hidiki.github.io.git
+git remote add origin git@github.com:HiDIKI/hidiki.github.io.build.git
 git add -A
 git commit -m 'DEPLOY'
 git push -f --set-upstream origin master
