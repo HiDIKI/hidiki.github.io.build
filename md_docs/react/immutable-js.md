@@ -5,7 +5,7 @@ customauthor:
 # * Redux 찰떡궁합:heart: Immutable JS
 <Author/>
 
-## **리엑트 상태관리값의 불변성?**
+## 리엑트 상태관리값의 불변성?
 
 React는 state 또는 props 의 값이 변경이 되어야 새롭게 다시 렌더링을 하게 된다. `이때 중요한 점으로 변경된 값을 React에서 알기위해 모든 값의 불변성을 유지해주어야 한다.`\
 [리엑트 공식문서](https://reactjs.org/docs/rendering-elements.html#updating-the-rendered-element)를 읽다보면 `"immutability"` 를 강조하는 것을 볼 수 있다. `(React elements are immutable.)`
@@ -41,7 +41,7 @@ const copyObj = {
 console.log(copyObj !== testObj); // true
 ```
 ---
-## **Redux 그리고 Immutable**
+## Redux 그리고 Immutable
 
 React의 상태관리값(State, Props)의 불변성을 유지하기위해 항상 새로운 객체 반환할 때에 정말 귀찮고 어려울 때가 있다.\
 리덕스로 애플리케이션의 컴포넌트 스토어를 하나 두었을때, 처음 data 값이 depth가 깊지 않고 단순하다면 문제가 되지않는다.
@@ -114,16 +114,14 @@ const newData = {
 };
 ```
 
-> 위 방식처럼 복잡하고 번거롭다. 사실 위 데이터 구조보다 더 복잡하게 애플리케이션이 많은 상태값을 가질 수도 있기때문에 더더욱 복잡해질 수도 있다.
+> 위 방식처럼 복잡하고 번거롭다. 사실 위 데이터 구조보다 더 복잡하게 애플리케이션이 많은 상태값을 가질 수도 있기때문에 더더욱 복잡해질 수도 있다.\
+위 코드를 immutable.js로 쓸 경우 하단 코드처럼 3줄로 줄일 수 있다.
 
-**immutable.js를 쓸 경우에는**
 ```js
 newData = data.updateIn(['people',idx], (person) => {
    return person.set('flag', true); 
 });
 ```
-
-> 3줄로 줄었다.
 
 위 예시처럼 immutable은 제공하는 몇가지 메서드를 이용해서, 아무리 depth가 깊어도 쉽게 값을 변화하여 새로운 객체를 반환하여 준다.\
 immutable은 [공식문서](https://immutable-js.github.io/immutable-js/docs/#/) 또한 너무 정리가 잘되어있어서, 어렵지 않다.
