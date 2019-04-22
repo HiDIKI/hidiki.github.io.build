@@ -70,7 +70,8 @@ module.exports = {
                 title: 'React',
                 children: [
                     '/react/why-choose-react',
-                    '/react/react-redux'
+                    '/react/react-redux',
+                    '/react/immutable-js'
                 ]
             },
             {
