@@ -18,11 +18,11 @@ cd docs
 
 git init
 git remote add origin git@github.com:HiDIKI/hidiki.github.io.build.git
+git config user.name hidekuma
+git config user.email d.hidekuma@gmail.com
 git add -A
 git commit -m 'DEPLOY'
 git push -f --set-upstream origin master
-git config user.name hidekuma
-git config user.email d.hidekuma@gmail.com
 
 # if you are deploying to https://<USERNAME>.github.io
 git push
