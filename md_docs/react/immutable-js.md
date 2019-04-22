@@ -10,7 +10,7 @@ customauthor:
 React는 state 또는 props 의 값이 변경이 되어야 새롭게 다시 렌더링을 하게 된다. `이때 중요한 점으로 변경된 값을 React에서 알기위해 모든 값의 불변성을 유지해주어야 한다.`\
 [리엑트 공식문서](https://reactjs.org/docs/rendering-elements.html#updating-the-rendered-element)를 읽다보면 `"immutability"` 를 강조하는 것을 볼 수 있다. `(React elements are immutable.)`
 
-> 불변성 예시
+### 불변성 예시
 
 ```js
 const testObj = {
@@ -25,7 +25,7 @@ console.log(copyObj !== testObj); // false
 //하지만 위 console.log 는 두개의 값이 다르지 않지 않는다고 false 로 나온다.
 ```
 
-> 위 같은 결과가 나온 이유는 copyObj가 다른 객체가 아닌 똑같은 객체를 바라보는 레퍼런스 하나가 만들어진 것이기 때문이다.
+> 위 같은 결과가 나온 이유는 `copyObj가 다른 객체가 아닌 똑같은 객체를 바라보는 레퍼런스 하나`가 만들어진 것이기 때문이다.
 
 ```js
 const testObj = {
@@ -43,8 +43,7 @@ console.log(copyObj !== testObj); // true
 ---
 ## Redux 그리고 Immutable
 
-React의 상태관리값(State, Props)의 불변성을 유지하기위해 항상 새로운 객체 반환할 때에 정말 귀찮고 어려울 때가 있다.\
-리덕스로 애플리케이션의 컴포넌트 스토어를 하나 두었을때, 처음 data 값이 depth가 깊지 않고 단순하다면 문제가 되지않는다.
+React의 상태관리값(State, Props)의 불변성을 유지하기위해 항상 새로운 객체 반환할 때에 정말 귀찮고 어려울 때가 있다. 리덕스로 애플리케이션의 상태관리 스토어를 하나 두었을때, 처음 data 값이 depth가 깊지 않고 단순하다면 문제가 되지않는다.
 
 ```js
 const data = {
@@ -97,7 +96,7 @@ const data = {
 };
 ```
 
-> 위 data 구조에서 people 값 내부 특정 사람(idx)의 flag값을 true로 바꿔야 한다면?
+### 위 data 구조에서 people 값 내부 특정 사람(idx)의 flag값을 true로 바꿔야 한다면?
 
 ```js
 //특정 idx 대입
@@ -114,8 +113,9 @@ const newData = {
 };
 ```
 
-> 위 방식처럼 복잡하고 번거롭다. 사실 위 데이터 구조보다 더 복잡하게 애플리케이션이 많은 상태값을 가질 수도 있기때문에 더더욱 복잡해질 수도 있다.\
-위 코드를 immutable.js로 쓸 경우 하단 코드처럼 3줄로 줄일 수 있다.
+> 위 방식처럼 복잡하고 번거롭다. 사실 위 데이터 구조보다 더 복잡한 애플리케이션의 경우, depth도 깊고 다양한 상태값을 가지므로 코드가 불가피하게 길어진다.
+
+### immutable.js를 쓸 경우
 
 ```js
 newData = data.updateIn(['people',idx], (person) => {
@@ -123,8 +123,10 @@ newData = data.updateIn(['people',idx], (person) => {
 });
 ```
 
+> 3줄로 줄일 수 있다.
+
 위 예시처럼 immutable은 제공하는 몇가지 메서드를 이용해서, 아무리 depth가 깊어도 쉽게 값을 변화하여 새로운 객체를 반환하여 준다.\
-immutable은 [공식문서](https://immutable-js.github.io/immutable-js/docs/#/) 또한 너무 정리가 잘되어있어서, 어렵지 않다.
+immutable의 [공식문서](https://immutable-js.github.io/immutable-js/docs/#/)는 정리가 너무 잘 되어있어서 기존의 react, redux 환경에도 적용하기에 어렵지 않다.
 
 ---
 
