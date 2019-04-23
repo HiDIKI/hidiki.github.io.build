@@ -17,7 +17,7 @@ cd docs
 # echo 'www.example.com' > CNAME
 
 git init
-git remote add origin git@github.com:HiDIKI/hidiki.github.io.build.git
+git remote add origin https://github.com/HiDIKI/hidiki.github.io.git
 git config user.name hidekuma
 git config user.email d.hidekuma@gmail.com
 git add -A
@@ -25,7 +25,7 @@ git commit -m 'DEPLOY'
 git push -f --set-upstream origin master
 
 # if you are deploying to https://<USERNAME>.github.io
-git push
+# git push
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
 # git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
