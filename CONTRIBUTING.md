@@ -132,4 +132,4 @@ yarn # 패키지 인스톨
 yarn dev # check localhost:8080
 ```
 ## 🚀 배포
-> Jenkins를 통해 hourly로 merge된 부분에 한해서 배포된다.
+> Github Webhook -> Jenkins, Deploy merged requests.

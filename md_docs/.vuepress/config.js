@@ -44,6 +44,7 @@ module.exports = {
                 title: 'Docker',
                 children: [
                     '/docker/window-install',
+                    '/docker/kali-install',
                     '/docker/extend-services-in-compose'
                 ]
             },
@@ -78,6 +79,7 @@ module.exports = {
             {
                 title: 'Else',
                 children: [
+                    '/else/terms-of-start-up',
                     '/else/framework-and-library'
                 ]
             },
