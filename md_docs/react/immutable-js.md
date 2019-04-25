@@ -25,7 +25,7 @@ console.log(copyObj !== testObj); // false
 //하지만 위 console.log 는 두개의 값이 다르지 않지 않는다고 false 로 나온다.
 ```
 
-> 위 같은 결과가 나온 이유는 `copyObj가 다른 객체가 아닌 똑같은 객체를 바라보는 레퍼런스 하나`가 만들어진 것이기 때문이다.
+위 같은 결과가 나온 이유는 `copyObj가 다른 객체가 아닌 똑같은 객체를 바라보는 레퍼런스 하나`가 만들어진 것이기 때문이다.
 
 ```js
 const testObj = {
@@ -59,7 +59,7 @@ const newData = {
 }
 ```
 
-> 리덕스 액션 중 flag 값을 바꾸는 액션이 있다고 가정하면 해당 액션타입 리듀서 에서는 새로운 data 값으로 flag 를 false로 바꿔서 `newData` 값 처럼 보내 주어야한다. - 위 예시 처럼 단순한 data 구조라면 쉽다.
+리덕스 액션 중 flag 값을 바꾸는 액션이 있다고 가정하면 해당 액션타입 리듀서 에서는 새로운 data 값으로 flag 를 false로 바꿔서 `newData` 값 처럼 보내 주어야한다. - 위 예시 처럼 단순한 data 구조라면 쉽다.
 
 ```js
 const data = {
@@ -113,7 +113,7 @@ const newData = {
 };
 ```
 
-> 위 방식처럼 복잡하고 번거롭다. 사실 위 데이터 구조보다 더 복잡한 애플리케이션의 경우, depth도 깊고 다양한 상태값을 가지므로 코드가 불가피하게 길어진다.
+위 방식처럼 복잡하고 번거롭다. 사실 위 데이터 구조보다 더 복잡한 애플리케이션의 경우, depth도 깊고 다양한 상태값을 가지므로 코드가 불가피하게 길어진다.
 
 ### immutable.js를 쓸 경우
 
@@ -123,7 +123,7 @@ newData = data.updateIn(['people',idx], (person) => {
 });
 ```
 
-> 3줄로 줄일 수 있다.
+3줄로 줄일 수 있다.
 
 위 예시처럼 immutable은 제공하는 몇가지 메서드를 이용해서, 아무리 depth가 깊어도 쉽게 값을 변화하여 새로운 객체를 반환하여 준다.\
 immutable의 [공식문서](https://immutable-js.github.io/immutable-js/docs/#/)는 정리가 너무 잘 되어있어서 기존의 react, redux 환경에도 적용하기에 어렵지 않다.
@@ -140,7 +140,7 @@ immutable의 [공식문서](https://immutable-js.github.io/immutable-js/docs/#/)
 
 ## immutable 간단한 사용 예시보기 (값 읽기,수정)
 
-> immutable 데이터 만들기
+immutable 데이터 만들기
 
 ```js
 //native javascirpt
@@ -187,7 +187,7 @@ const data = fromJS({
 //또는 fromJS로 최상위를 감싸준다.
 ```
 
-> immutable 데이터 가져오기
+immutable 데이터 가져오기
 
 ```js
 data.toJS(); // immutable 데이터를 native javascirpt 객체로 반환해준다.
@@ -200,7 +200,7 @@ data.getIn(['people',0].concat('name')); // "Wabi"
 // 위 처럼 사용도 가능하다.
 ```
 
-> immutable 데이터 수정하기\
+immutable 데이터 수정하기\
 (하단에는, 수정하는 방법은 엄청 다양하므로 set, setIn만 간단히 설명하고 이외 방법은 원하는 로직에따라 [공식문서](https://immutable-js.github.io/immutable-js/docs/#/)를 참조하면 된다.)
 
 ```js
