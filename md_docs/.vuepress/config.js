@@ -67,6 +67,7 @@ module.exports = {
                     '/javascript/code-optimization',
                     '/javascript/pure-function',
                     '/javascript/promise-resolve-order',
+                    '/javascript/arrow-function',
                 ]
             },
             {
