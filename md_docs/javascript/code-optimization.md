@@ -1,4 +1,10 @@
+---
+customauthor:
+  - name: taekbari
+---
+
 # * 자바스크립트 성능 최적화  
+<Author/>
 
 ### `||` 연산자  
 
@@ -28,6 +34,13 @@ const result2 = { test: 'test' } || '';
 
 `&&` 연산자는 참을 만나야 다음 연산을 진행하므로 어떤 조건을 만족할 때 실행하도록 하는 코드에서 사용하면 코드량과 연산 횟수를 줄일 수 있다.  
 ```javascript  
+/*
+user 객체는 다음과 같이 구성된다고 가정.
+user = {
+    loggedIn: boolean,
+    id: string
+}
+*/
 let userID;
 if ( user && user.loggedIn ) {
     userID = user;
@@ -37,7 +50,7 @@ else {
 }
 
 const userID = user && user.loggedIn && user.id;
-console.log( userID ); // user.id에 설정된 값을 
+console.log( userID ); // user.id에 설정된 값을 할당.
 ```  
 > 논리 연산자의 경우, 조건이 많이 들어가는 경우에는 오히려 가독성을 떨어뜨릴 수 있다.  
 
@@ -59,6 +72,7 @@ const str = 'test';
 ### 반복문  
 
 * `for`문 안에서 `Array.length`를 직접 사용하는 것보다 선언 후 사용한다.  
+* 구문이 반복될 때, 배열의 길이를 가져오는 연산을 줄이기 위한 방법이다.  
 ```javascript  
 // bad
 for ( let i = 0; i < arr.length; i++ ) {
