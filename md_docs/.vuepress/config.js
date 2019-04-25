@@ -65,7 +65,8 @@ module.exports = {
                 children: [
                     '/javascript/webassembly',
                     '/javascript/code-optimization',
-                    '/javascript/pure-function'
+                    '/javascript/pure-function',
+                    '/javascript/promise-resolve-order',
                 ]
             },
             {
@@ -95,4 +96,3 @@ module.exports = {
         ]
     },
 }
-
