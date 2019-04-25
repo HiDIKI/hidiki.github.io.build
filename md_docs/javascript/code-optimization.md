@@ -61,13 +61,13 @@ const str = 'test';
 * `for`문 안에서 `Array.length`를 직접 사용하는 것보다 선언 후 사용한다.  
 ```javascript  
 // bad
-for ( const i = 0; i < arr.length; i++ ) {
+for ( let i = 0; i < arr.length; i++ ) {
     // ...
 }
 
 // good
 const length = arr.length;
-for ( const i = 0; i < length; i++ ) {
+for ( let i = 0; i < length; i++ ) {
     // ...
 }
 ```  
