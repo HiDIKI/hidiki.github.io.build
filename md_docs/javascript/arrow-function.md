@@ -21,10 +21,10 @@ customauthor:
 ```js
 //function
 const testFn1 = function(x){
-    return x*x;
+    return x * x;
 }
 //arrow function
-const testFn2 = x => x*x;
+const testFn2 = x => x * x;
 
 testFn1(3); // 9
 testFn2(3); // 9
