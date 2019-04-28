@@ -61,6 +61,12 @@ module.exports = {
                 ]
             },
             {
+                title: 'Algorithm',
+                children: [
+                    '/algorithm/binary-search',
+                ]
+            },
+            {
                 title: 'Javascript',
                 children: [
                     '/javascript/webassembly',
