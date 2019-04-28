@@ -75,7 +75,8 @@ module.exports = {
                 children: [
                     '/react/why-choose-react',
                     '/react/react-redux',
-                    '/react/immutable-js'
+                    '/react/immutable-js',
+                    '/react/redux-thunk'
                 ]
             },
             {
