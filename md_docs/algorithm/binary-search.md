@@ -56,7 +56,7 @@ def binary_search(list, target):
             low = mid + 1
     return None # 찾는 숫자가 배열에 없다.
 
-test_list = [1,2,3,4,5,6,7,8,9,10,12,14,16,18,20]
+test_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 14, 16, 18, 20]
 
 print(binary_search(test_list, 5)) # 4, 인덱스 4 = 5
 print(binary_search(test_list, 11)) # None 배열 내에 11이라는 숫자는 없다.
