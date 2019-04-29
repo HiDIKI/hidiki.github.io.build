@@ -64,6 +64,7 @@ module.exports = {
                 title: 'Algorithm',
                 children: [
                     '/algorithm/binary-search',
+                    '/algorithm/big-o-notation',
                 ]
             },
             {
