@@ -17,7 +17,7 @@ customauthor:
 
 ## 짧게 구현이 가능하다.
 
-### 에시 1
+### 예시 1
 ```js
 //function
 const testFn1 = function(x){
@@ -40,7 +40,7 @@ testFn3(testFn1,7); // 49
 testFn4(testFn2,7); // 49
 ```
 
-### 에시 2
+### 예시 2
 ```js
 const arr = ['wabi','teak','tesilio','hidekuma','one'];
 console.log(arr.map((v,i)=>`인덱스 ${i}는 ${v} 입니다.`));
