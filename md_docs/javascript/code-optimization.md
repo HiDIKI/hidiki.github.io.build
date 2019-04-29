@@ -43,7 +43,7 @@ user = {
 */
 let userID;
 if ( user && user.loggedIn ) {
-    userID = user;
+    userID = user.id;
 }
 else {
     userID = null;
