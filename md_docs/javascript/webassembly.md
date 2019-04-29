@@ -1,4 +1,10 @@
+---
+customauthor:
+  - name: taekbari
+---
+
 # * WebAssembly  
+<Author/>
 
 C/C++, Rust 등으로 작성한 코드를 바이너리로 컴파일하고 그 결과를 웹 브라우저 환경에서 호출하고 실행할 수 있는 새로운 유형의 기술을 말한다.
 

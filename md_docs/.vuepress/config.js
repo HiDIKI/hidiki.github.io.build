@@ -89,7 +89,8 @@ module.exports = {
                 title: 'Else',
                 children: [
                     '/else/terms-of-start-up',
-                    '/else/framework-and-library'
+                    '/else/framework-and-library',
+                    '/else/atomic-design'
                 ]
             },
         ],
