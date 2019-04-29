@@ -9,7 +9,7 @@ customauthor:
 
 ---
 
-## 1. 재귀함수를 이용한 방법
+## 1. 재귀함수를 이용하는 방법
 ```js
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 const msList = [500, 400, 300, 200, 100];
@@ -38,7 +38,7 @@ recursivePromise(msList).then(resultList => {
 ```
 `async/await`를 이용하여 작성되었다. `Array.prototype.shift()` 함수를 사용했고 `stack overflow error`에 대응되지 않았기 때문에 큰 사이즈의 배열 순회에 사용하기엔 적합하지 않다.
 
-## 2. `Array.prototype.reduce()`를 이용한 방법
+## 2. `Array.prototype.reduce()`를 이용하는 방법
 ```js
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 const msList = [500, 400, 300, 200, 100];
@@ -65,4 +65,4 @@ result.then(resultList => {
   - `callback` 함수의 첫번째 인수는 순회 중 값을 누적시킨다.
 - 두번째 매개변수로는 `callback` 함수의 최초 호출시 첫 번째 인수에 제공할 값을 받는다.
   - 예제에서는 `Promise.resolve()`로 명시하여 첫 번째 순회부터 `Promise`객체로 정의했다.
-- 이와 `async/await` 이용하여 간단히 `Promise` 객체의 완료 시점을 보장받고 순회할 수 있다.
+- 이와 `async/await`를 이용하여 간단히 `Promise` 객체의 완료 시점을 보장받고 순회할 수 있다.

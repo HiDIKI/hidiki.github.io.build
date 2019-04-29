@@ -114,8 +114,8 @@ const getNextPerson = (function(){
 })();
 ```
 
-위 코드의 `getNextRainbowColor`함수는 순수한 함수이다.\
-항상 같은 것을 반환 하기 때문에 안전하다. 결국에는 next() 메서드도 매번 다른 값을 반환하기 때문에 순수한 함수가 아니다? 라고 할 수도 있지만, 반환 자체가 메서드라는 점, 자신이 속한 객체 안에서 동작하기 때문에 `getNextRainbowColor` 함수를 다른곳에 또 호출하더라도 독립적인 이터레이터가 생성된다. (= 다른 이터레이터를 침범하지 않는다.)
+위 코드의 `getNextPerson`함수는 순수한 함수이다.\
+항상 같은 것을 반환 하기 때문에 안전하다. 결국에는 next() 메서드도 매번 다른 값을 반환하기 때문에 순수한 함수가 아니다? 라고 할 수도 있지만, 반환 자체가 메서드라는 점, 자신이 속한 객체 안에서 동작하기 때문에 `getNextPerson` 함수를 다른곳에 또 호출하더라도 독립적인 이터레이터가 생성된다. (= 다른 이터레이터를 침범하지 않는다.)
 
 ```js
 test1 = new getNextPerson(['wabi','yuna','hidekuma','one','teak','twice']);
@@ -168,4 +168,4 @@ test1.next(); // {value: undefined, done: true}
 test2.next(); // {value: "yuna", done: false}
 ```
 
-위 코드 `getNextRainbowColor` 함수 또한 제너레이터를 이용한 순수한 함수이다.
+위 코드 `getNextPerson` 함수 또한 제너레이터를 이용한 순수한 함수이다.

@@ -61,12 +61,19 @@ module.exports = {
                 ]
             },
             {
+                title: 'Algorithm',
+                children: [
+                    '/algorithm/binary-search',
+                ]
+            },
+            {
                 title: 'Javascript',
                 children: [
                     '/javascript/webassembly',
                     '/javascript/code-optimization',
                     '/javascript/pure-function',
                     '/javascript/promise-resolve-order',
+                    '/javascript/arrow-function',
                 ]
             },
             {
@@ -74,7 +81,8 @@ module.exports = {
                 children: [
                     '/react/why-choose-react',
                     '/react/react-redux',
-                    '/react/immutable-js'
+                    '/react/immutable-js',
+                    '/react/redux-thunk'
                 ]
             },
             {
