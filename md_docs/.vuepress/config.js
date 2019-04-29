@@ -62,6 +62,12 @@ module.exports = {
                 ]
             },
             {
+                title: 'AWS',
+                children: [
+                    '/aws/lambda/layer',
+                ]
+            },
+            {
                 title: 'Algorithm',
                 children: [
                     '/algorithm/binary-search',
