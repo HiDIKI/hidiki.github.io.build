@@ -29,7 +29,8 @@ module.exports = {
                     '/pythonic/generator',
                     '/pythonic/raise-error',
                     '/pythonic/closure',
-                    '/pythonic/feature-of-iterator'
+                    '/pythonic/feature-of-iterator',
+                    '/pythonic/star-args'
                 ]
             },
             {
