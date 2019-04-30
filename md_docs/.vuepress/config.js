@@ -93,6 +93,12 @@ module.exports = {
                 ]
             },
             {
+                title: 'TypeScript',
+                children: [
+                    '/typescript/ts-introduction',
+                ]
+            },
+            {
                 title: 'Else',
                 children: [
                     '/else/terms-of-start-up',
