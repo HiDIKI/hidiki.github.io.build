@@ -13,6 +13,8 @@ customauthor:
 |:---:|:---:|
 |<img :src="$withBase('/react-redux/mvc_pattern.png')" alt="mvc_pattern" />|<img :src="$withBase('/react-redux/flux_pattern.png')" alt="flux_pattern" />|
 ---
+
+> [출처 : 웹 Frameworks (http://webframeworks.kr/tutorials/react/flux/)](http://webframeworks.kr/tutorials/react/flux/)
 ## Flux & Redux
 
 리덕스는 플럭스 패턴의 중요한 특징들에서 영감을 받아서 만들어졌다고, [리덕스 공식 문서](https://lunit.gitbook.io/redux-in-korean/introduction/priorart)에도 나와있다.
@@ -46,3 +48,5 @@ Flux 패턴의 핵심 개념과 동일하다.
 
 2. 상위 컴포넌트에서 무수히 많은 Depth의 하위 컴포넌트에 상태값을 내려줘야 되는경우\
 <img :src="$withBase('/react-redux/withRedux.png')" alt="withRedux" />
+
+> [출처 : codecentric Blog (https://blog.codecentric.de/en/2017/12/developing-modern-offline-apps-reactjs-redux-electron-part-3-reactjs-redux-basics/)](https://blog.codecentric.de/en/2017/12/developing-modern-offline-apps-reactjs-redux-electron-part-3-reactjs-redux-basics/)
