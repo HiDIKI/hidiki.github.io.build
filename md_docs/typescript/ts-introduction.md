@@ -13,7 +13,7 @@ customauthor:
 
 ## Superset of Javascript
 
-<p style="text-align:center;"><img :src="$withBase('/ts-introduction/typescript-vs-javascript.png')" alt="javascript_superset" /></p>
+<p style="text-align:center;"><img :src="$withBase('/ts-introduction/javascript_superset.png')" alt="javascript_superset" /></p>
 
 > [출처 : Superset of Javascript (https://howtodoinjava.com/typescript)](https://howtodoinjava.com/typescript)
 
@@ -21,7 +21,7 @@ customauthor:
 타입스크립트는 ES5, ES6의 superset으로 기존 자바스크립트 문법을 그대로 사용할 수 있으며,  
 ES6의 새로운 메소드나 기능들을 사용하기 위해  별도의 Transpiler(예: babel)을 필요로 하지 않는다.  
 새로운 기능을 브라우저의 엔진 혹은 Node.js를 통해 실행 할 수 있다.  
-TypeScript 컴파일러는 TypeScript   문법을 자바스크립트 문법으로 변환시켜주며,  
+TypeScript 컴파일러는 TypeScript 문법을 자바스크립트 문법으로 변환시켜주며,  
 이때 코드에서 변수를 정의한 순서나 이름을 바꾸지 않는다.  
 따라서, 자바스크립트 결과물을 브라우저에서 디버깅하여 TypeScript 코드를 수정하기에도 용이하다.
 
