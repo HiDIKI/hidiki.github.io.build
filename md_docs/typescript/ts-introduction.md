@@ -13,9 +13,9 @@ customauthor:
 
 ## Superset of Javascript
 
-<p style="text-align:center;"><img :src="$withBase('/ts-introduction/typescript-vs-javaScript.png')" alt="javascript_superset" /></p>
+<p style="text-align:center;"><img :src="$withBase('/ts-introduction/javascript_superset.png')" alt="javascript_superset" /></p>
 
->[출처 : Superset of Javascript(https://howtodoinjava.com/typescript/typescript-tutorial/)](https://howtodoinjava.com/typescript/typescript-tutorial/)
+> [출처 : Superset of Javascript (https://howtodoinjava.com/typescript)](https://howtodoinjava.com/typescript)
 
 **타입스크립트는 자바스크립트의 상위집합이다.**  
 타입스크립트는 ES5, ES6의 superset으로 기존 자바스크립트 문법을 그대로 사용할 수 있으며,  
