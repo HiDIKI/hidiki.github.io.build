@@ -97,6 +97,7 @@ module.exports = {
                 title: 'TypeScript',
                 children: [
                     '/typescript/ts-introduction',
+                    '/typescript/ts-primitive-types',
                 ]
             },
             {
