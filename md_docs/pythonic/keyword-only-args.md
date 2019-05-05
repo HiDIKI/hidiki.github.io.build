@@ -35,8 +35,8 @@ hidekuma say : test
 
 복잡한 함수를 작성하면 할 수록, 호출하는 쪽에서 의도를 명확하게 드러내도록 함수 작성단에서 강제성을 부여하는 것이 좋다.
 
-## 키워드 전용인수를 이용한 함수
-파이썬 3에서는 `Keyword-only argument`로 함수 호출 시, **키워드 인수**로만 넘길 수 있게 강제성을 부여할 수 있다. (위치인수X)
+## 키워드 전용인수를 이용한 함수 (Python3)
+파이썬 3에서는 `Keyword-only argument`로 함수 호출 시, **키워드 인수**로만 넘길 수 있게 강제성을 부여할 수 있다.
 ```python
 def say(msg, delimiter, *, user='unknown'): # <-- 위치 인수와 키워드 인수 사이에 *로 구분한다.
   # ...                                  
@@ -46,5 +46,24 @@ say('test', ':', 'hidekuma') # 키워드 인수이나 위치 인수로 명시하
 >>>
 TypeError: say() takes 2 positional arguments but 3 were given 
 ```
-이제 해당 코드는 위치 인수로는 동작하지 않으며, 키워드 인수로만 기대한 결과를 얻을 수 있다. 이와 같은 키워드 전용 인수는 `python2`에는 존재하지 않는다.
-하지만, 다음과 같은 방법으로 어느정도 흉내 낼 수 있다.
+이제 해당 코드는 위치 인수로는 동작하지 않으며, 키워드 인수로만 기대한 결과를 얻을 수 있다.
+
+## 키워드 전용인수를 이용한 함수 (Python2)
+상기 설명한 키워드 전용 인수는 `python2`에서는 존재하지 않는다. 하지만, 다음과 같은 방법으로 어느정도 흉내 낼 수 있다.
+```python
+def say(msg, delimiter, **kwargs):
+  user = kwargs.pop('user', 'unknown')
+  if kwargs:
+    raise TypeError('Unexpected **kwargs: %r' % kwargs)
+    
+print('{user} say {delimiter} {msg}'.format(msg=msg, delimiter=delimiter, user=user))
+  
+say('test', ':')
+say('test', ':', 'wabi')
+say('test', ':', user='hidekuma')
+
+>>>
+unknown say : test 
+TypeError: say() takes 2 positional arguments but 3 were given 
+hidekuma say : test 
+```
