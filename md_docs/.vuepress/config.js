@@ -82,7 +82,11 @@ module.exports = {
                     '/javascript/pure-function',
                     '/javascript/promise-resolve-order',
                     '/javascript/arrow-function',
-                    '/javascript/asynchronous-programming',
+                    '/javascript/asynchronous-programming-intro',
+                    '/javascript/asynchronous-programming-1',
+                    '/javascript/asynchronous-programming-2',
+                    '/javascript/asynchronous-programming-3',
+                    '/javascript/asynchronous-programming-4',
                 ]
             },
             {
