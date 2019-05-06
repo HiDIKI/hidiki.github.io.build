@@ -30,7 +30,8 @@ module.exports = {
                     '/pythonic/raise-error',
                     '/pythonic/closure',
                     '/pythonic/feature-of-iterator',
-                    '/pythonic/star-args'
+                    '/pythonic/star-args',
+                    '/pythonic/keyword-only-args'
                 ]
             },
             {
