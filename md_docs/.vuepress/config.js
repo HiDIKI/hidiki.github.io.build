@@ -82,6 +82,7 @@ module.exports = {
                     '/javascript/pure-function',
                     '/javascript/promise-resolve-order',
                     '/javascript/arrow-function',
+                    '/javascript/you-dont-know-js-type'
                 ]
             },
             {
