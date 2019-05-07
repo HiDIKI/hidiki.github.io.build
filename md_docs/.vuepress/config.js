@@ -35,11 +35,16 @@ module.exports = {
                 ]
             },
             {
+                title: 'Python',
+                children: [
+                    '/python/uvloop',
+                ]
+            },
+            {
                 title: 'Java',
                 children: [
                     '/java/start-spring-boot',
-                    '/java/sts-with-lombok',
-                    '/java/bean-vs-component'
+                    '/java/sts-with-lombok'
                 ]
             },
             {
@@ -107,11 +112,16 @@ module.exports = {
                 ]
             },
             {
+                title: 'Design',
+                children: [
+                    '/design/atomic-design'
+                ]
+            },
+            {
                 title: 'Else',
                 children: [
                     '/else/terms-of-start-up',
                     '/else/framework-and-library',
-                    '/else/atomic-design'
                 ]
             },
         ],
