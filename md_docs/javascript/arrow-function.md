@@ -42,13 +42,13 @@ testFn4(testFn2,7); // 49
 
 ### 예시 2
 ```js
-const arr = ['wabi','teak','tesilio','hidekuma','one'];
+const arr = ['wabi','taek','tesilio','hidekuma','one'];
 console.log(arr.map((v,i)=>`인덱스 ${i}는 ${v} 입니다.`));
 // expected output: Array 
 /*
 [
     "인덱스 0는 wabi 입니다.",
-    "인덱스 1는 teak 입니다.",
+    "인덱스 1는 taek 입니다.",
     "인덱스 2는 tesilio 입니다.",
     "인덱스 3는 hidekuma 입니다.",
     "인덱스 4는 one 입니다."
