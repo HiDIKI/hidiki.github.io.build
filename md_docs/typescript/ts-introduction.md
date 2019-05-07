@@ -15,7 +15,7 @@ customauthor:
 
 <p style="text-align:center;"><img :src="$withBase('/ts-introduction/javascript_superset.png')" alt="javascript_superset" /></p>
 
-> [출처 : Superset of Javascript (https://howtodoinjava.com/typescript)](https://howtodoinjava.com/typescript)
+> [출처 : Superset of Javascript](https://howtodoinjava.com/typescript)
 
 **타입스크립트는 자바스크립트의 상위집합이다.**  
 타입스크립트는 ES5, ES6의 superset으로 기존 자바스크립트 문법을 그대로 사용할 수 있으며,  
@@ -52,4 +52,4 @@ JavaScript가 대규모 어플리케이션에 적합하지 않다는 팀과 고�
 
 <p style="text-align:center;"><img :src="$withBase('/ts-introduction/google-trends-typescript.png')" alt="google_trends_typescript" /></p>
 
-> [출처 : Google Trends 지난 5년간 TypeScript 관심도(https://trends.google.co.kr/trends/explore?date=today%205-y&q=Typescript)](https://trends.google.co.kr/trends/explore?date=today%205-y&q=Typescript)
+> [출처 : Google Trends 지난 5년간 TypeScript 관심도](https://trends.google.co.kr/trends/explore?date=today%205-y&q=Typescript)

@@ -56,6 +56,7 @@ Added|Deleted|Modified|Updated|Created something titie
 - [x] 문서의 경로는 `md_docs > {category:language} > {title:path}.md`이다.
 - [x] 작성이 완료되면, `md_docs > .vuepress > config.js`의 `sidebar`영역에 연결 주소를 넣어준다
   - 단, 연결주소에 `md`확장자는 생략한다.
+  - 메뉴의 순서는 알파벳 순서이며, 글자 캐릭터 순서대로 비교한다. 글자가 중복(ex: Java, Javascript)일 경우 글자가 짧은 단어가 위로 온다.
 - [x] `PR`전에 로컬 개발환경에서 정상동작하는지 확인한다.
 - [x] 글 내용은 `합니다`가 아닌 `한다`체여야 한다.
 - [x] 가독성을 위해 문서의 헤드태그(`#`)은 가능하면(`###`)까지 사용한다.

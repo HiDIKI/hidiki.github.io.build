@@ -23,22 +23,28 @@ module.exports = {
     themeConfig: {
         sidebar: [
             {
-                title: 'Pythonic',
+                title: 'Algorithm',
                 children: [
-                    '/pythonic/pep8',
-                    '/pythonic/generator',
-                    '/pythonic/raise-error',
-                    '/pythonic/closure',
-                    '/pythonic/feature-of-iterator',
-                    '/pythonic/star-args'
+                    '/algorithm/binary-search',
+                    '/algorithm/big-o-notation',
                 ]
             },
             {
-                title: 'Java',
+                title: 'AWS',
                 children: [
-                    '/java/start-spring-boot',
-                    '/java/sts-with-lombok',
-                    '/java/bean-vs-component'
+                    '/aws/lambda/layer',
+                ]
+            },
+            {
+                title: 'Database',
+                children: [
+                    'database/mysql-storage-engine'
+                ]
+            },
+            {
+                title: 'Design',
+                children: [
+                    '/design/atomic-design'
                 ]
             },
             {
@@ -50,28 +56,10 @@ module.exports = {
                 ]
             },
             {
-                title: 'Vim',
+                title: 'Java',
                 children: [
-                    '/vim/vimrc'
-                ]
-            },
-            {
-                title: 'Database',
-                children: [
-                    'database/mysql-storage-engine'
-                ]
-            },
-            {
-                title: 'AWS',
-                children: [
-                    '/aws/lambda/layer',
-                ]
-            },
-            {
-                title: 'Algorithm',
-                children: [
-                    '/algorithm/binary-search',
-                    '/algorithm/big-o-notation',
+                    '/java/start-spring-boot',
+                    '/java/sts-with-lombok'
                 ]
             },
             {
@@ -82,7 +70,31 @@ module.exports = {
                     '/javascript/pure-function',
                     '/javascript/promise-resolve-order',
                     '/javascript/arrow-function',
+                    '/javascript/asynchronous-programming-intro',
+                    '/javascript/asynchronous-programming-1',
+                    '/javascript/asynchronous-programming-2',
+                    '/javascript/asynchronous-programming-3',
+                    '/javascript/asynchronous-programming-4',
+                    '/javascript/map-set',
                     '/javascript/you-dont-know-js-type'
+                ]
+            },
+            {
+                title: 'Python',
+                children: [
+                    '/python/uvloop',
+                ]
+            },
+            {
+                title: 'Pythonic',
+                children: [
+                    '/pythonic/pep8',
+                    '/pythonic/generator',
+                    '/pythonic/raise-error',
+                    '/pythonic/closure',
+                    '/pythonic/feature-of-iterator',
+                    '/pythonic/star-args',
+                    '/pythonic/keyword-only-args'
                 ]
             },
             {
@@ -102,11 +114,16 @@ module.exports = {
                 ]
             },
             {
+                title: 'Vim',
+                children: [
+                    '/vim/vimrc'
+                ]
+            },
+            {
                 title: 'Else',
                 children: [
                     '/else/terms-of-start-up',
                     '/else/framework-and-library',
-                    '/else/atomic-design'
                 ]
             },
         ],
