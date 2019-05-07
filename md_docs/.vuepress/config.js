@@ -75,6 +75,7 @@ module.exports = {
                     '/javascript/asynchronous-programming-2',
                     '/javascript/asynchronous-programming-3',
                     '/javascript/asynchronous-programming-4',
+                    '/javascript/map-set',
                 ]
             },
             {
