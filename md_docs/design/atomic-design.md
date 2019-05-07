@@ -72,4 +72,4 @@ customauthor:
 
 #### Reference  
 
-[Atomic Design(https://brunch.co.kr/@ultra0034/63)](https://brunch.co.kr/@ultra0034/63)
+- [Atomic Design](https://brunch.co.kr/@ultra0034/63)
