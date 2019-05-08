@@ -11,7 +11,7 @@ customauthor:
 ```js
 function* getHidikiMembers() {
   yield 'Wabi';
-  yield 'Teak';
+  yield 'Taek';
   yield 'Tesilio';
   yield 'One';
   yield 'Hidekuma';
@@ -19,7 +19,7 @@ function* getHidikiMembers() {
 
 const hidikiMembers = getHidikiMembers();
 console.log(hidikiMembers.next()); // {value: "Wabi", done: false}
-console.log(hidikiMembers.next()); // {value: "Teak", done: false}
+console.log(hidikiMembers.next()); // {value: "Taek", done: false}
 console.log(hidikiMembers.next()); // {value: "Tesilio", done: false}
 console.log(hidikiMembers.next()); // {value: "One", done: false}
 console.log(hidikiMembers.next()); // {value: "Hidekuma", done: false}
@@ -71,7 +71,7 @@ for(let l of abc()){
 ## 예시 1-1) 프로미스를 제너레이터로 변환 : 우선 프로미스로 구현 예시
 
 ```js
-const users = ['Wabi','Teak','Tesilio','Hidekuma','One'];
+const users = ['Wabi','Taek','Tesilio','Hidekuma','One'];
 
 const getRandomIdx = obj => new Promise(resolve => {
   setTimeout(() => resolve({
@@ -143,7 +143,7 @@ g.next().value.then(objId => {
         {
             value : {
                 idx : 1,
-                name : "Teak"
+                name : "Taek"
             },
             done : false
         }
@@ -195,7 +195,7 @@ function* gen () {
   return getNextUserByName(objName.idx+1);
   //co 함수 내부 ret.done 값이 true 일때 종료하기위해 return을 사용하였다.
 }
-co(gen).then(user => console.log(user)); // Teak (랜덤한 이름)
+co(gen).then(user => console.log(user)); // Taek (랜덤한 이름)
 ```
 
 위 처럼 실행함수 사용하면 제너레이터 사용하는 부분도 쉽게 구현 가능하다.
