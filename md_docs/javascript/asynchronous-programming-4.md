@@ -18,7 +18,7 @@ Node는 7.6 버전부터는 async/await 를 별도의 도구없이도 지원하�
 ## 예시 1) 프로미스에서 async/await로 변환
 
 ```js
-const users = ['Wabi','Teak','Tesilio','Hidekuma','One'];
+const users = ['Wabi','Taek','Tesilio','Hidekuma','One'];
 
 const getRandomIdx = obj => new Promise(resolve => {
   setTimeout(() => resolve({
