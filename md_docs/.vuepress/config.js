@@ -94,7 +94,8 @@ module.exports = {
                     '/pythonic/closure',
                     '/pythonic/feature-of-iterator',
                     '/pythonic/star-args',
-                    '/pythonic/keyword-only-args'
+                    '/pythonic/keyword-only-args',
+                    '/pythonic/helper-class'
                 ]
             },
             {
