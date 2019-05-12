@@ -76,6 +76,7 @@ module.exports = {
                     '/javascript/asynchronous-programming-3',
                     '/javascript/asynchronous-programming-4',
                     '/javascript/map-set',
+                    '/javascript/event-loop',
                     '/javascript/you-dont-know-js-type'
                 ]
             },
@@ -94,7 +95,8 @@ module.exports = {
                     '/pythonic/closure',
                     '/pythonic/feature-of-iterator',
                     '/pythonic/star-args',
-                    '/pythonic/keyword-only-args'
+                    '/pythonic/keyword-only-args',
+                    '/pythonic/helper-class'
                 ]
             },
             {

@@ -1,6 +1,6 @@
 ---
 customauthor:
-  - name: juunone
+  - name: Juunone
 ---
 
 # * Primitive types
