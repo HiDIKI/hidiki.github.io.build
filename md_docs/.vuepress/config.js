@@ -95,7 +95,8 @@ module.exports = {
                     '/pythonic/feature-of-iterator',
                     '/pythonic/star-args',
                     '/pythonic/keyword-only-args',
-                    '/pythonic/helper-class'
+                    '/pythonic/helper-class',
+                    '/pythonic/preserve-the-state-of-python-closure'
                 ]
             },
             {
