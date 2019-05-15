@@ -10,6 +10,9 @@ pipeline {
       steps {
         sh 'node --version'
         sh 'yarn --version'
+        sh 'yarn'
+        sh 'yarn build'
+        sh 'sudo rm -rf  node_modules'
       }
     }
     stage('Pull') {
