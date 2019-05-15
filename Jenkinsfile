@@ -3,6 +3,14 @@ pipeline {
     docker { image 'kkarczmarczyk/node-yarn' }
   }
   stages {
+    stage('Pull') {
+      when {
+        branch 'master'
+      }
+      steps {
+        git(url: 'https://github.com/HiDIKI/hidiki.github.io.build.git', branch: 'master', poll: true)
+      }
+    }
     stage('Test') {
       when {
         branch 'master'
@@ -10,14 +18,6 @@ pipeline {
       steps {
         sh 'node --version'
         sh 'yarn --version'
-      }
-    }
-    stage('Pull') {
-      when {
-        branch 'master'
-      }
-      steps {
-        git(url: 'https://github.com/HiDIKI/hidiki.github.io.build.git', branch: 'master', poll: true)
       }
     }
     stage('Build') {
@@ -54,11 +54,11 @@ pipeline {
   }
   post {
     success {
-      slackSend (color: '#00FF00', message: "SUCCESSFUL: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL})")
+      slackSend (color: '#00FF00', message: "SUCCESSFUL: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'")
     }
 
     failure {
-      slackSend (color: '#FF0000', message: "FAILED: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL})")
+      slackSend (color: '#FF0000', message: "FAILED: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'")
     }
   }
 }
