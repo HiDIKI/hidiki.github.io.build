@@ -76,8 +76,7 @@ module.exports = {
                     '/javascript/asynchronous-programming-3',
                     '/javascript/asynchronous-programming-4',
                     '/javascript/map-set',
-                    '/javascript/event-loop',
-                    '/javascript/event-handle',
+                    '/javascript/event-loop'
                 ]
             },
             {
