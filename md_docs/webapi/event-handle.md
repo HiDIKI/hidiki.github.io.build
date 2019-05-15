@@ -2,8 +2,10 @@
 customauthor:
   - name: Juunone
 ---
-# * Event Handle
+# * DOM Event Handle
 <Author/>
+
+Web API Event의 stopPropagation, preventDefault Methods에 대해 설명하고자 한다.
 
 **이벤트 버블링이란 ?**
 - 자식에서 발생된 이벤트가 부모 노드에 순차적으로 전달되는 현상
@@ -15,7 +17,7 @@ customauthor:
 
 **event.stopPropagation : 이벤트 캡쳐링과 버블링에 있어 현재 이벤트 이후의 전파를 막는다.**
 
-<p style="text-align:center;"><img :src="$withBase('/js-event-handle/browser_handle_click.jpg')" alt="browser_handle_click" /></p>
+<p style="text-align:center;"><img :src="$withBase('/webapi-event-handle/browser_handle_click.jpg')" alt="browser_handle_click" /></p>
 
 > [출처 : Screencasts dot org Youtube](https://youtu.be/IyCnbyWZkRU)    
 
