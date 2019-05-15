@@ -3,21 +3,24 @@ pipeline {
     docker { image 'kkarczmarczyk/node-yarn' }
   }
   stages {
-    stage('Test') {
-      steps {
-        sh 'node --version'
-        sh 'yarn --version'
-        sh 'yarn'
-        sh 'yarn build'
-        sh 'sudo rm -rf  node_modules'
-      }
-    }
     stage('Pull') {
       when {
         branch 'master'
       }
       steps {
         git(url: 'https://github.com/HiDIKI/hidiki.github.io.build.git', branch: 'master', poll: true)
+      }
+    }
+    stage('Test') {
+      when {
+        branch 'master'
+      }
+      steps {
+        sh 'node --version'
+        sh 'yarn --version'
+        sh 'yarn'
+        sh 'yarn build'
+        sh 'sudo rm -rf  node_modules'
       }
     }
     stage('Build') {
