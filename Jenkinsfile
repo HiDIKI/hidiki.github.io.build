@@ -4,9 +4,6 @@ pipeline {
   }
   stages {
     stage('Test') {
-      when {
-         branch 'master'
-      }
       steps {
         sh 'node --version'
         sh 'yarn --version'
