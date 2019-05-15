@@ -18,9 +18,6 @@ pipeline {
       steps {
         sh 'node --version'
         sh 'yarn --version'
-        sh 'yarn'
-        sh 'yarn build'
-        sh 'sudo rm -rf  node_modules'
       }
     }
     stage('Build') {
@@ -57,11 +54,11 @@ pipeline {
   }
   post {
     success {
-      slackSend (color: '#00FF00', message: "SUCCESSFUL: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL})")
+      slackSend (color: '#00FF00', message: "SUCCESSFUL: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'")
     }
 
     failure {
-      slackSend (color: '#FF0000', message: "FAILED: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL})")
+      slackSend (color: '#FF0000', message: "FAILED: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'")
     }
   }
 }
