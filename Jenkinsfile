@@ -5,9 +5,7 @@ pipeline {
   stages {
     stage('Test') {
       when {
-        not {
-          branch 'master'
-        }
+         branch 'master'
       }
       steps {
         sh 'node --version'
