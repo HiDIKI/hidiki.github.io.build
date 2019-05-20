@@ -77,7 +77,8 @@ module.exports = {
                     '/javascript/asynchronous-programming-4',
                     '/javascript/map-set',
                     '/javascript/event-loop',
-                    '/javascript/you-dont-know-js-type'
+                    '/javascript/you-dont-know-js-type',
+                    '/javascript/date-time'
                 ]
             },
             {
