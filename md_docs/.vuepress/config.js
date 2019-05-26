@@ -98,7 +98,8 @@ module.exports = {
                     '/pythonic/star-args',
                     '/pythonic/keyword-only-args',
                     '/pythonic/helper-class',
-                    '/pythonic/preserve-the-state-of-python-closure'
+                    '/pythonic/preserve-the-state-of-python-closure',
+                    '/pythonic/private-field'
                 ]
             },
             {
