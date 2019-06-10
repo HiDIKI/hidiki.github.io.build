@@ -99,7 +99,8 @@ module.exports = {
                     '/pythonic/keyword-only-args',
                     '/pythonic/helper-class',
                     '/pythonic/preserve-the-state-of-python-closure',
-                    '/pythonic/private-field'
+                    '/pythonic/private-field',
+                    '/pythonic/create-custom-container'
                 ]
             },
             {
