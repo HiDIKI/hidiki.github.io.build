@@ -128,7 +128,8 @@ module.exports = {
             {
                 title: 'WebAPI',
                 children: [
-                    '/webapi/event-handle'
+                    '/webapi/event-handle',
+                    '/webapi/fetch'
                 ]
             },
             {
