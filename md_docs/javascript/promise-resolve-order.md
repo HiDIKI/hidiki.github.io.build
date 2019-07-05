@@ -1,9 +1,5 @@
----
-customauthor:
-  - name: Tesilio
----
 # * `Promise` 객체 순회시 완료 순서 보장
-<Author/>
+<Author name='Tesilio'/>
 
 `Array` 객체에 담긴 n개의 `Promise` 객체들을 순서대로 완료(`resolve`)해야 하는 경우가 있다. `Promise.all()`함수는 비동기로 실행되어 완료순서를 보장받을 수 없다. 순서를 보장받는 두가지 방법을 알아보자.
 

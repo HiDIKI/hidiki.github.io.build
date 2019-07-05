@@ -1,11 +1,6 @@
----
-customauthor:
-  - name: Juunone
----
-
 # * Primitive types
 
-<Author/>
+<Author name='Juunone'/>
 
 TypeScript는 아래와 같이 변수명 뒤에 **타입(자료형)** 을 명시하는 것으로 타입을 선언할 수 있다.
 

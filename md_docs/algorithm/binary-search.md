@@ -3,7 +3,7 @@ customauthor:
   - name: Wabi
 ---
 # * Binary search : 이진탐색 알고리즘
-<Author/>
+<Author name='Wabi' />
 
 이진 탐색은 1~100 사이의 숫자 중 특정 숫자를 찾는다고 가정하였을 때, 1부터 탐색을 시작하는 것`(단순 탐색:simple search)`이 아닌, 중간 부터 시작하는 탐색이다.
 

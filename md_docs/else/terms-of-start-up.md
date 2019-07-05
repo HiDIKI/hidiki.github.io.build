@@ -1,9 +1,5 @@
----
-customauthor:
-  - name: Hidekuma
----
 # * 스타트업 용어 사전
-<Author/>
+<Author name="Hidekuma"/>
 
 ## start-up 
 설립한 지 오래되지 않은 신생 벤처기업을 뜻한다. 미국 실리콘밸리에서 생겨난 용어고 포인트는 자체적인 비즈니스 모델과 혁신적인 기술, 아이디어가 모여야 스타트업이라고 할 수 있다.

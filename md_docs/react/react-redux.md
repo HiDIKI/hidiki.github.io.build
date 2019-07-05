@@ -1,9 +1,5 @@
----
-customauthor:
-  - name: Wabi
----
 # * React Redux란?
-<Author/>
+<Author name='Wabi'/>
 
 ## Redux가 생겨난 이유
 

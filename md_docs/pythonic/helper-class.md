@@ -1,9 +1,5 @@
----
-customauthor:
-  - name: Hidekuma
----
 # * dict와 tuple보다 class를 사용해야 할 때
-<Author/>
+<Author name='Hidekuma' />
 
 ## 손 쉬운 사용은 코드를 취약하게 한다
 dict는 객체의 수명이 지속되는 동안 예측불가능한 식별자들을 관리하는 용도로 아주 좋다.

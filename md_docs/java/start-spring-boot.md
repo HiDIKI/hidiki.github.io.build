@@ -1,9 +1,5 @@
----
-customauthor:
-  - name: Hidekuma
----
 # * Spring Boot (스프링 부트) 시작하기
-<Author/>
+<Author name="Hidekuma"/>
 ## 1. IDE 선택하기
 ### Spring Tool Suite 4(STS)
 오픈소스 IDE로 줄여서 `STS`라고도 한다. [다운로드 경로](https://spring.io/tools)

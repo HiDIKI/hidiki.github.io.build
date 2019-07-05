@@ -1,10 +1,5 @@
----
-customauthor:
-  - name: taekbari
----
-
 # * 자바스크립트 성능 최적화  
-<Author/>
+<Author name='Taekbari'/>
 
 ### `||` 연산자  
 

@@ -1,9 +1,5 @@
----
-customauthor:
-  - name: Wabi
----
 # * Redux 찰떡궁합:heart: Immutable JS
-<Author/>
+<Author name='Wabi'/>
 
 ## 리엑트 상태관리값의 불변성?
 

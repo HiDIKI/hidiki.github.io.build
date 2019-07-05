@@ -1,9 +1,5 @@
----
-customauthor:
-  - name: Juunone
----
 # * Using Fetch
-<Author/>
+<Author name="Juunone"/>
 
 ## **REST API Connect**
 

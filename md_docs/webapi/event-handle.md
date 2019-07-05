@@ -1,9 +1,5 @@
----
-customauthor:
-  - name: Juunone
----
 # * DOM Event Handle
-<Author/>
+<Author name="Juunone"/>
 
 Web API Event의 stopPropagation, preventDefault Methods에 대해 설명하고자 한다.
 

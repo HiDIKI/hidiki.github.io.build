@@ -1,9 +1,6 @@
----
-customauthor:
-  - name: Hidekuma
----
 # * Kali linux에 도커 설치 
-<Author/>
+<Author name="Hidekuma"/>
+
 ## 1. 설치 전 준비사항 3 STEP
 1.`Docker pgp key` 추가
 ```sh

@@ -1,9 +1,5 @@
----
-customauthor:
-  - name: Wabi
----
 # * 서브루틴, 순수한 함수
-<Author/>
+<Author name='Wabi'/>
 
 ## 서브루틴
 

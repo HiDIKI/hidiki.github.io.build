@@ -1,9 +1,5 @@
----
-customauthor:
-  - name: Wabi
----
 # * 날짜와 시간
-<Author/>
+<Author name='Wabi'/>
 
 자바스크립트의 Date 객체의 기능은 (만든이 : Ken Smith) 자바언어에서 java.util.Date를 가져온 것과 비슷하다.\
 우리가 사용하는 그레고리력의 시간보다, 컴퓨터는 초 단위로 나타내는게 이상적이고 쉽다.\

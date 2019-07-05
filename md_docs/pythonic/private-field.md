@@ -1,10 +1,5 @@
----
-customauthor:
-  - name: Hidekuma
----
-
 # * 파이썬 비공개 필드
-<Author/>
+<Author name='Hidekuma' />
 
 이름에서 예상할 수 있듯이, 정의 된 클래스내에서만 접근이 가능한 속성이다. 서브클래스에서도 부모클래스의 비공개 필드에 접근하지 못한다. 
 

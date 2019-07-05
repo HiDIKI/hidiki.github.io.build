@@ -1,9 +1,5 @@
----
-customauthor:
-  - name: Wabi
----
 # * 비동기적 프로그래밍 - 4. async/await
-<Author/>
+<Author name='Wabi'/>
 
 - callback이나 promise 이후로 나온 비동기 코드를 작성하는 새로운 방법이다.
 - 실제로는 최상위에 위치한 promise를 사용하는 방식이다.

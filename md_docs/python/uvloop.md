@@ -1,9 +1,5 @@
----
-customauthor:
-  - name: Hidekuma
----
 # * uvloop
-<Author/>
+<Author name='Hidekuma' />
 uvloop는 asyncio의 이벤트 루프 대체재로,  asyncio를 더 빠르게 만들고,  nodejs, gevent 및 다른 python 프레임워크와 비교해봐도, 2배이상의 퍼포먼스를 보여준다.
 
 ::: tip
