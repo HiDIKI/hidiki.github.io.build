@@ -39,15 +39,16 @@ recursivePromise(msList).then(resultList => {
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 const msList = [500, 400, 300, 200, 100];
 
-const result = msList.reduce(async (previousMs, currentMs, index, array) => {
-    await previousMs;
-    await delay(currentMs);
-    console.log(currentMs);
-    array[index] = currentMs;
-    return array;
-}, Promise.resolve());
-result.then(resultList => {
-    console.log(resultList);
+const reduceResult = msList.reduce(async (previousMs, currentMs) => {
+  const previousMsResult = await previousMs;
+  await delay(currentMs);
+  console.log(currentMs);
+  previousMsResult.push(`${currentMs}ms done!`);
+  return previousMsResult;
+}, Promise.resolve([]));
+
+reduceResult.then(result => {
+  console.log(result);
 });
 
 // 500
@@ -55,7 +56,11 @@ result.then(resultList => {
 // 300
 // 200
 // 100
-// [ 500, 400, 300, 200, 100 ]
+// [ '500ms done!',
+//   '400ms done!',
+//   '300ms done!',
+//   '200ms done!',
+//   '100ms done!' ]
 ```
 - `Array.prototype.reduce()`함수는 첫번째 매개변수로 `callback` 함수를 받는다.
   - `callback` 함수의 첫번째 인수는 순회 중 값을 누적시킨다.
