@@ -68,14 +68,10 @@ Added|Deleted|Modified|Updated|Created something titie
 
 ## 🚧 부가기능
 ### 글쓴이 넣기
-`md`파일 최상단에 해당 부분삽입 후 제목 태그에 아래에 `<Author/>`컴포넌트 삽입.
+`md` 파일 제목 태그에 아래에 `<Author name={name}/>`컴포넌트 삽입. 단, 닉네임은 첫 글자 대문자로 하며, 걸리는 링크는 `Author.vue` 파일에서 수정한다.
 ```md
----
-customauthor:
-  - name: Hidekuma
----
-# 제목 타이틀 밑에다가 아래 태그 삽입
-<Author/>
+# * 제목 타이틀 밑에다가 아래 태그 삽입
+<Author name="Hidekuma" />
 ```
 
 ## 🚥 이슈컨트롤 - 자동종료
