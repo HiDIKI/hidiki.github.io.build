@@ -80,7 +80,8 @@ module.exports = {
                     '/javascript/you-dont-know-js-type',
                     '/javascript/date-time',
                     '/javascript/strict-mode',
-                    '/javascript/learning-javascript-array-1'
+                    '/javascript/learning-javascript-array-1',
+                    '/javascript/learning-javascript-array-2'
                 ]
             },
             {
