@@ -79,7 +79,8 @@ module.exports = {
                     '/javascript/event-loop',
                     '/javascript/you-dont-know-js-type',
                     '/javascript/date-time',
-                    '/javascript/strict-mode'
+                    '/javascript/strict-mode',
+                    '/javascript/learning-javascript-array-1'
                 ]
             },
             {
