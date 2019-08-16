@@ -3,13 +3,9 @@ customauthor:
   - name: Bluemoon
 ---
 # * Iterator, Iterable 차이점
-<Author name="Bluemoon" />
-
+<Author/>
 `Iterator`, `Iterable`은 자바 컬렉션 인터페이스에서 제공  
-
----
 ## Iterable
-
 `Iterable`은 순회할 수 있는 컬렉션을 나타낸다. 이 인터페이스를 상속하게 되면 객체는 `for-each` loop를 사용할 수 있게 해준다.  
 (내부적으로 iterator() 메소드를 객체에 호출해서 가능)  
 ```java
@@ -23,7 +19,6 @@ for (String person: persons) {
 public interface Collection<E> extends Iterable<E> {
     ...
 ```
----
 ## Iterator
 `Iterator` 인터페이스는 다른 객체, 다른 종류의 컬렉션을 순회하게 해줄수 있다. 이 인터페이스를 순회하기 위해서는 `hasNext()` + `next()` 메소드를 사용해야한다.
 ```java
