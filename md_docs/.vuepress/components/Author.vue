@@ -15,6 +15,7 @@
                     Juunone: 'https://github.com/juunone',
                     Taekbari: 'https://github.com/taekbari',
                     Tesilio: 'https://github.com/tesilio',
+                    Bluemoon: 'https://github.com/liquidjoo',
                     Wabi: 'https://github.com/DeveloperYB'
 
                 }
