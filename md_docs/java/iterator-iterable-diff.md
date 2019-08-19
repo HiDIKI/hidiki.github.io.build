@@ -1,9 +1,6 @@
----
-customauthor:
-  - name: Bluemoon
----
 # * Iterator, Iterable 차이점
-<Author/>
+<Author name="Bluemoon"/>
+
 `Iterator`, `Iterable`은 자바 컬렉션 인터페이스에서 제공  
 ## Iterable
 `Iterable`은 순회할 수 있는 컬렉션을 나타낸다. 이 인터페이스를 상속하게 되면 객체는 `for-each` loop를 사용할 수 있게 해준다.  
