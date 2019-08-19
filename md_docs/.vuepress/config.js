@@ -59,7 +59,8 @@ module.exports = {
                 title: 'Java',
                 children: [
                     '/java/start-spring-boot',
-                    '/java/sts-with-lombok'
+                    '/java/sts-with-lombok',
+                    '/java/iterator-iterable-diff'
                 ]
             },
             {
