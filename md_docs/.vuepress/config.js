@@ -82,7 +82,8 @@ module.exports = {
                     '/javascript/date-time',
                     '/javascript/strict-mode',
                     '/javascript/learning-javascript-array-1',
-                    '/javascript/learning-javascript-array-2'
+                    '/javascript/learning-javascript-array-2',
+                    '/javascript/learning-javascript-array-3'
                 ]
             },
             {
