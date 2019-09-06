@@ -110,6 +110,12 @@ module.exports = {
                 ]
             },
             {
+                title: 'React Native',
+                children: [
+                    '/react-native/performance'
+                ]
+            },
+            {
                 title: 'TypeScript',
                 children: [
                     '/typescript/ts-introduction',
