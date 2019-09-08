@@ -1,4 +1,9 @@
+---
+customauthor:
+  - name: Wabi
+---
 # 리엑트 네이티브 퍼포먼스 Do or Don't
+<Author/>
 
 ### 1. 리엑트 네이티브의 성능은 리엑트 성능 개선과 동일하게 보면 된다.
 
@@ -62,7 +67,7 @@ React Native 코드는 [Image 컴포넌트](https://facebook.github.io/react-nat
 비록 앱에 이미지 메모리 이슈가 없더라도, 보여줄 이미지를 보다 정확한 크기로 정하는 것은
 좋은 방법이다. 이렇게 하면 유저 디바이스에 대한 부담이 줄어들 것 이다.
 
-> 글 저자, Nelio 앱개발자 "우리는 최근에 이미지 스케일링 CDN 솔루션으로 전환했는데,
+> 원문 글 저자, Nelio 앱개발자 "우리는 최근에 이미지 스케일링 CDN 솔루션으로 전환했는데,
 이 솔루션을 사용하면 우리가 디스플레이하고 싶은 크기로 정확하게 스케일링된 이미지를 다운로드할 수 있다.
 기록을 위해 우리는 [CloudImage](https://www.cloudimage.io/en/home)를 선택했고, 현재 [CloudImage](https://www.cloudimage.io/en/home)에 매우 만족하고 있다.
 그것은 우리가 특정한 크기로 즉시 이미지를 요청할 수 있게 해준다.
