@@ -1,9 +1,5 @@
----
-customauthor:
-  - name: Wabi
----
 # 리엑트 네이티브 퍼포먼스 Do or Don't
-<Author/>
+<Author name='Wabi'/>
 
 ### 1. 리엑트 네이티브의 성능은 리엑트 성능 개선과 동일하게 보면 된다.
 
