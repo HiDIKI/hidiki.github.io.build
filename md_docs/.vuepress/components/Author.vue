@@ -1,11 +1,25 @@
 <template>
-    <div v-if="$page.frontmatter.customauthor">
-        <div v-for="value in $page.frontmatter.customauthor">
-            <p style="text-align:right" class="author" v-if="value.name">
-				Written by📝{{value.name}}
-				<!-- <span v-if="value.email"> / {{value.email}}</span> --></p>
-        </div>
-		<!-- <img :src="$withBase('/authors/lombok-error.png')" alt="lombok-error"> -->
-    </div>
+    <p v-if='name && links[name] != null' style="text-align:right" class="author">
+    Written by 📝 <a :href='links[name]'>{{name}}</a>
+    </p>
 </template>
 
+<script>
+    export default {
+        name: 'Author',
+        props: ['name', 'link'],
+        data() {
+            return {
+                links: {
+                    Hidekuma: 'https://github.com/hidekuma',
+                    Juunone: 'https://github.com/juunone',
+                    Taekbari: 'https://github.com/taekbari',
+                    Tesilio: 'https://github.com/tesilio',
+                    Bluemoon: 'https://github.com/liquidjoo',
+                    Wabi: 'https://github.com/DeveloperYB'
+
+                }
+            }
+        }
+    }
+</script>

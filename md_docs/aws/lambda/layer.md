@@ -1,9 +1,5 @@
----
-customauthor:
-  - name: Tesilio
----
 # * AWS Lambda Layer
-<Author/>
+<Author name='Tesilio'/>
 
 `AWS Lambda Layer`는 라이브러리, 사용자 지정 런타임 또는 그 외 종속성을 포함하는 ZIP 아카이브이다.  
 여러 Lambda 함수에서 공통으로 쓰는 라이브러리 패키지나 모듈이 있다면, `AWS Lambda Layer`로 구성하는 것이 좋다.

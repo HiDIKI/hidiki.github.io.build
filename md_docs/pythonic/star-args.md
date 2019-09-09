@@ -1,9 +1,5 @@
----
-customauthor:
-  - name: Hidekuma
----
 # * 가변 위치 인수
-<Author/>
+<Author name='Hidekuma' />
 
 ## 선택적 위치 인수
 관례적으로 `*args` 혹은 `star args`라고 한다. 해당 위치 인수를 통해 함수 호출을 명확히 할 수 있다.  다음 [예시1](#예시1)을 봐보자. 호출 단에서 몇 가지 문제점이 보여질 것이다.

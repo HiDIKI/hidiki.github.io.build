@@ -1,9 +1,5 @@
----
-customauthor:
-  - name: Wabi
----
 # * 리엑트 장단점 및 사용하기 좋은 예시
-<Author/>
+<Author name='Wabi'/>
 
 ## 리엑트 장점
 

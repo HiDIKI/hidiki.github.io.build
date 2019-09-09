@@ -1,9 +1,5 @@
----
-customauthor:
-  - name: Hidekuma
----
 # * 상태보존 클로저 
-<Author/>
+<Author name='Hidekuma' />
 
 ## 예시 1. 함수형태
 딕셔너리 타입의 `before`에 튜플로 구성 된 `loop`데이터를 순회하면서, 해당 `value`를 합산하고 새로운 값이 추가 될때마다 `print`를 찍는 함수이다. 클로저가 읽어지는 순서에 대해 잘 모른다면, [해당 문서](/pythonic/closure)를 참고할 것.

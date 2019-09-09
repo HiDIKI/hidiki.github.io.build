@@ -1,9 +1,5 @@
----
-customauthor:
-  - name: Wabi
----
 # * Redux thunk
-<Author/>
+<Author name='Wabi'/>
 
 리덕스를 사용하는 애플리케이션 에서는 비동기 작업을 위해서 특정 미들웨어를 사용해야한다. 이때 redux-saga, mobX, redux thunk 등 많은 미들웨어 라이브러리 중 어떤 것과 아키텍쳐링을 구현하냐에 따라 사용하는 라이브러리가 다를 것 이다.
 

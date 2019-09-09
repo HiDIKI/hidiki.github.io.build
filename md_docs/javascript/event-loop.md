@@ -1,9 +1,5 @@
----
-customauthor:
-  - name: Juunone
----
 # * Event Loop
-<Author/>
+<Author name='Juunone'/>
 
 자바스크립트는 "단일 스레드" 기반의 언어이다.  
 동시에 하나의 작업만들 처리할 수 있다는 말인데, 자바스크립트가 사용되는 환경에서는 많은 작업이 동시에 처리된다. 

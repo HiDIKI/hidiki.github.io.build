@@ -1,11 +1,6 @@
----
-customauthor:
-  - name: Juunone
----
-
 # * Introduction
 
-<Author/>
+<Author name='Juunone'/>
 
 [타입스크립트 공식페이지](https://www.typescriptlang.org/)에 들어가면 메인에 아래와 같은 문구가 적혀있다.  
 - **TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.**   

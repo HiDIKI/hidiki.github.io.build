@@ -1,10 +1,5 @@
----
-customauthor:
-  - name: taekbari
----
-
 # * YOU DON'T KNOW JS - 타입  
-<Author/>  
+<Author name='Taekbari'/>  
 
 ## 타입  
 

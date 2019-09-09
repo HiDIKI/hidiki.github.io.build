@@ -1,9 +1,5 @@
----
-customauthor:
-  - name: Tesilio
----
 # * `Promise` 객체 순회시 완료 순서 보장
-<Author/>
+<Author name='Tesilio'/>
 
 `Array` 객체에 담긴 n개의 `Promise` 객체들을 순서대로 완료(`resolve`)해야 하는 경우가 있다. `Promise.all()`함수는 비동기로 실행되어 완료순서를 보장받을 수 없다. 순서를 보장받는 두가지 방법을 알아보자.
 
@@ -43,15 +39,16 @@ recursivePromise(msList).then(resultList => {
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 const msList = [500, 400, 300, 200, 100];
 
-const result = msList.reduce(async (previousMs, currentMs, index, array) => {
-    await previousMs;
-    await delay(currentMs);
-    console.log(currentMs);
-    array[index] = currentMs;
-    return array;
-}, Promise.resolve());
-result.then(resultList => {
-    console.log(resultList);
+const reduceResult = msList.reduce(async (previousMs, currentMs) => {
+  const previousMsResult = await previousMs;
+  await delay(currentMs);
+  console.log(currentMs);
+  previousMsResult.push(`${currentMs}ms done!`);
+  return previousMsResult;
+}, Promise.resolve([]));
+
+reduceResult.then(result => {
+  console.log(result);
 });
 
 // 500
@@ -59,7 +56,11 @@ result.then(resultList => {
 // 300
 // 200
 // 100
-// [ 500, 400, 300, 200, 100 ]
+// [ '500ms done!',
+//   '400ms done!',
+//   '300ms done!',
+//   '200ms done!',
+//   '100ms done!' ]
 ```
 - `Array.prototype.reduce()`함수는 첫번째 매개변수로 `callback` 함수를 받는다.
   - `callback` 함수의 첫번째 인수는 순회 중 값을 누적시킨다.

@@ -1,9 +1,5 @@
----
-customauthor:
-  - name: Hidekuma
----
 # * STS에 lombok 설치하기
-<Author/>
+<Author name="Hidekuma"/>
 스프링 스타터에 롬복 라이브러리를 추가하여도, 실제로 롬복의 어너테이션이 동작하지 않을 경우가 있는데, 이유는 IDE에 있다. STS의 마켓 플레이스를 뒤져봐도 찾아 볼 수 없을 것이다.
 ## lombok
 자바 프로젝트에서 이젠 필수적인 라이브러리이며, `Getter`, `Setter`등과 같은 로봇처럼 반복적이던 작업을 해소시켜주었다. 

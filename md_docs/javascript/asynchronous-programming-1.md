@@ -1,9 +1,5 @@
----
-customauthor:
-  - name: Wabi
----
 # * 비동기적 프로그래밍 - 1. Callback
-<Author/>
+<Author name='Wabi'/>
 
 ## 예시 1) setTimeout callback function 이용 예시
 ```js

@@ -1,9 +1,5 @@
----
-customauthor:
-  - name: Hidekuma
----
 # * 리스트 컴프리헨션과 제너레이터
-<Author/>
+<Author name='Hidekuma' />
 ## 리스트 컴프리헨션
 ### 새로운 리스트 만들기
 map과 lambda함수를 통해서 만들기 보단, 다음과 같이 명료하게 나타내며 리스트를 생성한다.

@@ -1,9 +1,5 @@
----
-customauthor:
-  - name: Wabi
----
 # * Big O notation : 빅오 표기법
-<Author/>
+<Author name='Wabi' />
 
 
 빅오 표기법은 알고리즘의 빠르기를 표시하는 방법이다.

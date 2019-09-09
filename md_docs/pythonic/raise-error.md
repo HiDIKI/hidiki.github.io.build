@@ -1,9 +1,5 @@
----
-customauthor:
-  - name: Hidekuma
----
 # * None을 반환하지 않기
-<Author/>
+<Author name='Hidekuma' />
 ## None을 반환할 경우
 나누기 함수를 작성해보자.
 ```python

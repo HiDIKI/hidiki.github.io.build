@@ -59,7 +59,8 @@ module.exports = {
                 title: 'Java',
                 children: [
                     '/java/start-spring-boot',
-                    '/java/sts-with-lombok'
+                    '/java/sts-with-lombok',
+                    '/java/iterator-iterable-diff'
                 ]
             },
             {
@@ -77,7 +78,12 @@ module.exports = {
                     '/javascript/asynchronous-programming-4',
                     '/javascript/map-set',
                     '/javascript/event-loop',
-                    '/javascript/you-dont-know-js-type'
+                    '/javascript/you-dont-know-js-type',
+                    '/javascript/date-time',
+                    '/javascript/strict-mode',
+                    '/javascript/learning-javascript-array-1',
+                    '/javascript/learning-javascript-array-2',
+                    '/javascript/learning-javascript-array-3'
                 ]
             },
             {
@@ -97,7 +103,9 @@ module.exports = {
                     '/pythonic/star-args',
                     '/pythonic/keyword-only-args',
                     '/pythonic/helper-class',
-                    '/pythonic/preserve-the-state-of-python-closure'
+                    '/pythonic/preserve-the-state-of-python-closure',
+                    '/pythonic/private-field',
+                    '/pythonic/create-custom-container'
                 ]
             },
             {
@@ -131,7 +139,8 @@ module.exports = {
             {
                 title: 'WebAPI',
                 children: [
-                    '/webapi/event-handle'
+                    '/webapi/event-handle',
+                    '/webapi/fetch'
                 ]
             },
             {

@@ -1,9 +1,5 @@
----
-customauthor:
-  - name: Wabi
----
 # * Map & Set
-<Author/>
+<Author name='Wabi'/>
 
 Map과 Set은 일반적인 알고리즘을 구현하는데 효과적으로 사용될 수 있는 자료구조이다.
 

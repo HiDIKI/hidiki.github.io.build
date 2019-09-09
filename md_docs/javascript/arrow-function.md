@@ -1,9 +1,5 @@
----
-customauthor:
-  - name: Wabi
----
 # * 화살표 함수 표현 (ES6)
-<Author/>
+<Author name='Wabi'/>
 
 ## 화살표 함수 특징
 - 기존의 function 보다 짧게 구현이 가능하다.
