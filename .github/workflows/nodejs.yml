@@ -1,39 +1,41 @@
 name: Node CI
-
 on:
   push:
     branches:
       - master
-
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     strategy:
       matrix:
         node-version: [12.x]
-
     steps:
     - uses: actions/checkout@v1
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-      run: |
-        set -e
-        npm install
-        npm run build
-        cp ./google*.html ./docs
-        cd ./docs
     - name: build
       env:
         GITHUB_TOKEN: ${{ secrets.github_action_token }}
         GITHUB_USER_NAME: ${{ secrets.user_name }}
         GITHUB_USER_EMAIL: ${{ secrets.user_email }}
-        CI: true
       run: |
         echo ${GITHUB_USER_NAME}
         echo ${GITHUB_USER_EMAIL}
         echo ${GITHUB_TOKEN}
-      
+        set -e
+        npm install
+        npm run build
+        cp ./google*.html ./docs
+        cd ./docs
+        echo "${GITHUB_USER_NAME}"
+        echo "${GITHUB_USER_EMAIL}"
+        echo "${GITHUB_TOKEN}"
+        git init
+        git remote add origin https://${GITHUB_USER_NAME}:${GITHUB_TOKEN}@github.com/HiDIKI/hidiki.github.io.git
+        git config user.name ${GITHUB_USER_NAME}
+        git config user.email ${GITHUB_USER_EMAIL}
+        git add -A
+        git commit -m "DEPLOY"
+        git push --set-upstream origin master
