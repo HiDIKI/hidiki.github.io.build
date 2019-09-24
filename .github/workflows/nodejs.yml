@@ -11,27 +11,22 @@ jobs:
         node-version: [12.x]
     steps:
     - uses: actions/checkout@v1
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: Use Node.js ${{ matrix.node-version }} and build
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: build
-      env:
-        GITHUB_TOKEN: ${{ secrets.github_action_token }}
-        GITHUB_USER_NAME: ${{ secrets.user_name }}
-        GITHUB_USER_EMAIL: ${{ secrets.user_email }}
-      run: |
-        echo ${GITHUB_USER_NAME}
-        echo ${GITHUB_USER_EMAIL}
-        echo ${GITHUB_TOKEN}
+      run:
         set -e
         npm install
         npm run build
         cp ./google*.html ./docs
         cd ./docs
-        echo "${GITHUB_USER_NAME}"
-        echo "${GITHUB_USER_EMAIL}"
-        echo "${GITHUB_TOKEN}"
+    - name: deploy
+      env:
+        GITHUB_TOKEN: ${{ secrets.github_action_token }}
+        GITHUB_USER_NAME: ${{ secrets.user_name }}
+        GITHUB_USER_EMAIL: ${{ secrets.user_email }}
+      run: |
         git init
         git remote add origin https://${GITHUB_USER_NAME}:${GITHUB_TOKEN}@github.com/HiDIKI/hidiki.github.io.git
         git config user.name ${GITHUB_USER_NAME}
