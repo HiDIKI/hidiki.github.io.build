@@ -38,4 +38,4 @@ jobs:
         git config user.email ${GITHUB_USER_EMAIL}
         git add -A
         git commit -m "DEPLOY"
-        git push --set-upstream origin master
+        git push -f --set-upstream origin master
