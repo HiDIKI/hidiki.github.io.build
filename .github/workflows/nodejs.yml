@@ -15,7 +15,7 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: deploy
+    - name: build
       env:
         GITHUB_TOKEN: ${{ secrets.github_action_token }}
         GITHUB_USER_NAME: ${{ secrets.user_name }}
