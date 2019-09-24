@@ -26,5 +26,12 @@ jobs:
         npm install
         npm build 
         cp ./google*.html ./docs
+        git init
+        git remote add origin https://hidekuma:$GITHUB_TOKEN@github.com/HiDIKI/hidiki.github.io.git
+        git config user.name hidekuma
+        git config user.email d.hidekuma@gmail.com
+        git add -A
+        git commit -m "DEPLOY"
+        git push -f --set-upstream origin master
       env:
         CI: true
