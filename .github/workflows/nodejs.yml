@@ -26,20 +26,11 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: build
       run: |
+        set -e
         echo ${GITHUB_USER_NAME}
         echo ${GITHUB_USER_EMAIL}
         echo ${GITHUB_TOKEN}
-        set -e
-        npm install
-        npm run build
-        cp ./google*.html ./docs
-        cd ./docs
-        git init
-        git remote add origin https://${GITHUB_USER_NAME}:${GITHUB_TOKEN}@github.com/HiDIKI/hidiki.github.io.git
-        git config user.name ${GITHUB_USER_NAME}
-        git config user.email ${GITHUB_USER_EMAIL}
-        git add -A
-        git commit -m "DEPLOY"
-        git push --set-upstream origin master
+        
+        
       env:
         CI: true
