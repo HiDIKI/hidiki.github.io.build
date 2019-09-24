@@ -30,7 +30,5 @@ jobs:
         echo ${GITHUB_USER_NAME}
         echo ${GITHUB_USER_EMAIL}
         echo ${GITHUB_TOKEN}
-        
-        
       env:
         CI: true
