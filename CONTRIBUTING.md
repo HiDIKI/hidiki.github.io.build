@@ -129,4 +129,6 @@ yarn # 패키지 인스톨
 yarn dev # check localhost:8080
 ```
 ## 🚀 배포
-> Github Webhook -> Jenkins, Deploy merged requests.
+- ~~Github Webhook -> Jenkins, Deploy merged requests. ( ~ 2019-09-24)~~
+- Github Actions -> Deploy (2019-09-24 ~ )
+  - 배포는 깃헙 액션 워크플로우에 의해 자동화 배포된다.
