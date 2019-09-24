@@ -27,15 +27,14 @@ jobs:
     - name: build
       run: |
         npm install
+        git clone https://$GITHUB_USER_NAME:$GITHUB_TOKEN@github.com/HiDIKI/hidiki.github.io.git docs
         npm run build
         cp ./google*.html ./docs
         cd ./docs
-        git init
-        git remote add origin https://$GITHUB_USER_NAME:$GITHUB_TOKEN@github.com/HiDIKI/hidiki.github.io.git
         git config user.name $GITHUB_USER_NAME
         git config user.email $GITHUB_USER_EMAIL
         git add -A
         git commit -m "DEPLOY"
-        git push -f --set-upstream origin master
+        git push --set-upstream origin master
       env:
         CI: true
