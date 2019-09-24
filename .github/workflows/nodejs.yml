@@ -18,17 +18,16 @@ jobs:
     - name: build
       run:
         set -e
-        rm -rf ./docs
         npm install
         npm run build
         cp ./google*.html ./docs
-        cd ./docs
     - name: deploy
       env:
         GITHUB_TOKEN: ${{ secrets.github_action_token }}
         GITHUB_USER_NAME: ${{ secrets.user_name }}
         GITHUB_USER_EMAIL: ${{ secrets.user_email }}
       run: |
+        cd ./docs
         git init
         git remote add origin https://${GITHUB_USER_NAME}:${GITHUB_TOKEN}@github.com/HiDIKI/hidiki.github.io.git
         git config user.name ${GITHUB_USER_NAME}
