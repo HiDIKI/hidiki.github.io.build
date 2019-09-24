@@ -17,18 +17,23 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Use Node.js ${{ matrix.node-version }}
-      env:
-        GITHUB_TOKEN: ${{ secrets.github_action_token }}
-        GITHUB_USER_NAME: ${{ secrets.user_name }}
-        GITHUB_USER_EMAIL: ${{ secrets.user_email }}
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
       run: |
         set -e
-        echo test
+        npm install
+        npm run build
+        cp ./google*.html ./docs
+        cd ./docs
+    - name: build
+      env:
+        GITHUB_TOKEN: ${{ secrets.github_action_token }}
+        GITHUB_USER_NAME: ${{ secrets.user_name }}
+        GITHUB_USER_EMAIL: ${{ secrets.user_email }}
+        CI: true
+      run: |
         echo ${GITHUB_USER_NAME}
         echo ${GITHUB_USER_EMAIL}
         echo ${GITHUB_TOKEN}
-      env:
-        CI: true
+      
