@@ -27,6 +27,7 @@ jobs:
         npm install
         npm run build
         cp ./google*.html ./docs
+        cd ./docs
         git init
         git remote add origin https://hidekuma:$GITHUB_TOKEN@github.com/HiDIKI/hidiki.github.io.git
         git config user.name hidekuma
