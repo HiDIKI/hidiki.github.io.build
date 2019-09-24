@@ -19,6 +19,8 @@ jobs:
     - name: Use Node.js ${{ matrix.node-version }}
       env:
         GITHUB_TOKEN: ${{ secrets.github_action_token }}
+        GITHUB_USER_NAME: ${{ secrets.user_name }}
+        GITHUB_USER_EMAIL: ${{ secrets.user_email }}
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
@@ -29,9 +31,9 @@ jobs:
         cp ./google*.html ./docs
         cd ./docs
         git init
-        git remote add origin https://hidekuma:$GITHUB_TOKEN@github.com/HiDIKI/hidiki.github.io.git
-        git config user.name hidekuma
-        git config user.email d.hidekuma@gmail.com
+        git remote add origin https://$GITHUB_USER_NAME:$GITHUB_TOKEN@github.com/HiDIKI/hidiki.github.io.git
+        git config user.name $GITHUB_USER_NAME
+        git config user.email $GITHUB_USER_EMAIL
         git add -A
         git commit -m "DEPLOY"
         git push -f --set-upstream origin master
